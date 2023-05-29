@@ -2889,15 +2889,11 @@
                 '\u8282\u6d41\u51fd\u6570\uff08throttle\uff09\u662f\u6307\u5728\u4e00\u5b9a\u65f6\u95f4\u5185\u53ea\u6267\u884c\u4e00\u6b21\u4efb\u52a1\uff0c\u5373\u6bcf\u9694\u4e00\u6bb5\u65f6\u95f4\u6267\u884c\u4e00\u6b21\u4efb\u52a1\uff0c\u800c\u4e0d\u662f\u6bcf\u6b21\u89e6\u53d1\u4e8b\u4ef6\u90fd\u6267\u884c\u4e00\u6b21\u4efb\u52a1',
                 o.a.createElement('br', null),
                 '\u9ad8\u9891\u6267\u884c\u7684\u51fd\u6570\uff0c\u4e0d\u9700\u8981\u6bcf\u6b21\u90fd\u6267\u884c\u53ea\u9700\u8981\u5728\u95f4\u9694\u5185\u6267\u884c\u4e00\u6b21\u5373\u53ef',
-              ),
-            ),
-            o.a.createElement(
-              'p',
-              null,
-              o.a.createElement(
-                'strong',
-                null,
-                '\u5e94\u7528\u573a\u666f\uff1a',
+                o.a.createElement(
+                  'strong',
+                  null,
+                  '\u5e94\u7528\u573a\u666f\uff1a',
+                ),
               ),
             ),
             o.a.createElement(
@@ -2930,7 +2926,7 @@
               o.a.createElement('strong', null, '\u5b9e\u73b0\uff1a'),
             ),
             o.a.createElement(i['a'], {
-              code: 'function throttle(fn, delay) {\n  let lastTime = 0;\n  return function() {\n    let nowTime = Date.now();\n    if (nowTime - lastTime > delay) {\n      fn.apply(this, arguments);\n      lastTime = nowTime;\n    }\n  }\n}',
+              code: 'function throttle(fn, delay) {\n  let lastTime = 0;\n  return function () {\n    let nowTime = Date.now();\n    if (nowTime - lastTime > delay) {\n      fn.apply(this, arguments);\n      lastTime = nowTime;\n    }\n  };\n}',
               lang: 'js',
             }),
             o.a.createElement(
@@ -2999,7 +2995,7 @@
               o.a.createElement('strong', null, '\u5b9e\u73b0\uff1a'),
             ),
             o.a.createElement(i['a'], {
-              code: 'function debounce(fn, delay) {\n  let timer = null;\n  return function() {\n    if (timer) {\n      clearTimeout(timer);\n    }\n    timer = setTimeout(() => {\n      fn.apply(this, arguments);\n      timer = null;\n    }, delay);\n  }\n}',
+              code: 'function debounce(fn, delay) {\n  let timer = null;\n  return function () {\n    if (timer) {\n      clearTimeout(timer);\n    }\n    timer = setTimeout(() => {\n      fn.apply(this, arguments);\n      timer = null;\n    }, delay);\n  };\n}',
               lang: 'js',
             }),
             o.a.createElement(
@@ -3113,9 +3109,9 @@
             o.a.createElement(
               'p',
               null,
-              '\u7531\u4e8ehttp\u662f\u660e\u6587\u4f20\u8f93\u7684\uff0c\u56e0\u6b64\u5728\u4f20\u8f93\u8fc7\u7a0b\u4e2d\u5728\u6d4f\u89c8\u5668\u548c\u670d\u52a1\u5668\u4e4b\u524d\u7684\u4efb\u4f55\u8bbe\u5907\u90fd\u6709\u53ef\u80fd\u62e6\u622a\u5230\u6570\u636e\u5e76\u4f2a\u9020\u6216\u8005\u7a83\u53d6\u6570\u636e\u4fe1\u606f\u8fdb\u884c\u7f51\u7edc\u653b\u51fb\uff0c\u8fd9\u4e5f\u5c31\u662f',
+              '\u7531\u4e8e http \u662f\u660e\u6587\u4f20\u8f93\u7684\uff0c\u56e0\u6b64\u5728\u4f20\u8f93\u8fc7\u7a0b\u4e2d\u5728\u6d4f\u89c8\u5668\u548c\u670d\u52a1\u5668\u4e4b\u524d\u7684\u4efb\u4f55\u8bbe\u5907\u90fd\u6709\u53ef\u80fd\u62e6\u622a\u5230\u6570\u636e\u5e76\u4f2a\u9020\u6216\u8005\u7a83\u53d6\u6570\u636e\u4fe1\u606f\u8fdb\u884c\u7f51\u7edc\u653b\u51fb\uff0c\u8fd9\u4e5f\u5c31\u662f',
               o.a.createElement('code', null, '\u4e2d\u95f4\u4eba\u653b\u51fb'),
-              '.\u56e0\u6b64\u5728\u8fd9\u79cd\u5b89\u5168\u9690\u60a3\u4e0b\uff0c\u50ac\u751f\u4e86http\u589e\u52a0\u5b89\u5168\u6027\u76f8\u5173\u7684\u673a\u5236\uff0c',
+              '.\u56e0\u6b64\u5728\u8fd9\u79cd\u5b89\u5168\u9690\u60a3\u4e0b\uff0c\u50ac\u751f\u4e86 http \u589e\u52a0\u5b89\u5168\u6027\u76f8\u5173\u7684\u673a\u5236\uff0c',
               o.a.createElement('code', null, 'SSL/TSL'),
               ' \u52a0\u5bc6\u5c42\u8fdb\u884c\u6570\u636e\u52a0\u5bc6\u786e\u4fdd\u5b89\u5168',
             ),
@@ -3377,8 +3373,7 @@
               null,
               '\u8fd9\u79cd\u65b9\u5f0f\u662f\u5426\u53ef\u9760\u5462\uff1f\u5e76\u4e0d\u7136\uff0c\u4e2d\u95f4\u4eba\u4f9d\u7136\u53ef\u4ee5\u4f2a\u9020\u53e6\u4e00\u4efd\u516c\u94a5\u79c1\u94a5\uff0c\u9a97\u53d6\u6d4f\u89c8\u5668\u7aef\u7684\u5bc6\u94a5 X\uff0c\u5b9e\u73b0\u4e2d\u95f4\u4eba\u4e3a\u4ee3\u7406\u7684\u5f62\u5f0f\u83b7\u53d6\u6570\u636e\u6216\u8005\u7be1\u6539\u6570\u636e',
               o.a.createElement('img', {
-                src: n('yBxs'),
-                alt: '\u4e2d\u95f4\u4eba\u653b\u51fb',
+                src: 'https://github.com/huangrenfang/blog/blob/master/static/middle.a68210c6.png',
               }),
             ),
             o.a.createElement(
@@ -3420,12 +3415,12 @@
               o.a.createElement(
                 'li',
                 null,
-                '\u6570\u5b57\u8bc1\u4e66\u4e0a\u643a\u5e26\u660e\u6587\u6570\u636eT + \u6570\u5b57\u7b7e\u540dS',
+                '\u6570\u5b57\u8bc1\u4e66\u4e0a\u643a\u5e26\u660e\u6587\u6570\u636e T + \u6570\u5b57\u7b7e\u540d S',
               ),
               o.a.createElement(
                 'li',
                 null,
-                "\u901a\u8fc7\u8bc1\u4e66\u4e0a\u7684hash\u7b97\u6cd5\u5bf9\u660e\u6587\u8fdb\u884chash\u5f97\u5230T', \u4f7f\u7528\u6570\u636e\u8bc1\u4e66\u4e0a\u7684\u516c\u94a5\u5bf9\u7b7e\u540d\u8fdb\u884c\u89e3\u5bc6\u5f97\u5230S'",
+                "\u901a\u8fc7\u8bc1\u4e66\u4e0a\u7684 hash \u7b97\u6cd5\u5bf9\u660e\u6587\u8fdb\u884c hash \u5f97\u5230 T', \u4f7f\u7528\u6570\u636e\u8bc1\u4e66\u4e0a\u7684\u516c\u94a5\u5bf9\u7b7e\u540d\u8fdb\u884c\u89e3\u5bc6\u5f97\u5230 S'",
               ),
               o.a.createElement(
                 'li',
@@ -3453,7 +3448,7 @@
               null,
               '\u90a3\u4e48',
               o.a.createElement('code', null, '\u8c03\u5305\u8bc1\u4e66'),
-              '\u53ef\u884c\u5417?\u6bd4\u5982\u62ffB\u7f51\u7ad9\u7684\u8bc1\u4e66\u6765\u52ab\u6301A \u7f51\u7ad9 \u7b54\u6848\u4e5f\u662f\u4e0d\u884c\u7684\uff0c\u56e0\u4e3aB\u7684\u8bc1\u4e66\u4e0d\u4f1a\uff0c\u5e26\u6709 A \u7f51\u7ad9\u7684\u4fe1\u606f\uff0c\u8bc1\u4e66\u9a8c\u8bc1\u4e0d\u901a\u8fc7',
+              '\u53ef\u884c\u5417?\u6bd4\u5982\u62ff B \u7f51\u7ad9\u7684\u8bc1\u4e66\u6765\u52ab\u6301 A \u7f51\u7ad9 \u7b54\u6848\u4e5f\u662f\u4e0d\u884c\u7684\uff0c\u56e0\u4e3a B \u7684\u8bc1\u4e66\u4e0d\u4f1a\uff0c\u5e26\u6709 A \u7f51\u7ad9\u7684\u4fe1\u606f\uff0c\u8bc1\u4e66\u9a8c\u8bc1\u4e0d\u901a\u8fc7',
             ),
             o.a.createElement(
               'p',
@@ -3468,7 +3463,7 @@
               o.a.createElement('br', null),
               '\u5176\u5b9e\u6570\u636e\u8bc1\u4e66\u7684\u4f5c\u7528\u5c31\u662f\u8bc1\u660e\u516c\u94a5\u7684\u53ef\u9760\u6027\uff0c\u6240\u5728\u5728\u64cd\u4f5c\u7cfb\u7edf\u3001\u6d4f\u89c8\u5668\u4e2d\u672c\u8eab\u4f1a\u9884\u88c5\u4e00\u4e9b\u4fe1\u4efb\u7684\u6839\u8bc1\u4e66',
               o.a.createElement('br', null),
-              '\u5982\u679c\u5176\u4e2d\u88c5\u6709\u8be5CA \u516c\u53f8\u7684\u6839\u8bc1\u4e66\uff0c\u5c31\u8bc1\u660e\u8fd9\u4e2a\u516c\u94a5\u662f\u53ef\u9760\u7684\uff0c\u4e0d\u7136\u7684\u8bdd\u4f1a\u63d0\u793a\u4e0d\u5b89\u5168\u9700\u8981\u5b89\u88c5\u8bc1\u4e66\u5565\u7684\u3002',
+              '\u5982\u679c\u5176\u4e2d\u88c5\u6709\u8be5 CA \u516c\u53f8\u7684\u6839\u8bc1\u4e66\uff0c\u5c31\u8bc1\u660e\u8fd9\u4e2a\u516c\u94a5\u662f\u53ef\u9760\u7684\uff0c\u4e0d\u7136\u7684\u8bdd\u4f1a\u63d0\u793a\u4e0d\u5b89\u5168\u9700\u8981\u5b89\u88c5\u8bc1\u4e66\u5565\u7684\u3002',
               o.a.createElement('br', null),
               '\u4e14\u8bc1\u4e66\u4e4b\u524d\u4e5f\u662f\u7ecf\u8fc7\u4e00\u5c42\u5c42\u7684\u5176\u4ed6\u8bc1\u4e66\u7684\u94fe\u5f0f\u8bc1\u660e\u6765\u5b9e\u73b0\u53ef\u9760\u6027\u7684',
             ),
@@ -5889,7 +5884,7 @@
             o.a.createElement(
               'p',
               null,
-              '\u6d4f\u89c8\u5668\u5c06\u4e4b\u524d\u8bf7\u6c42\u7684\u9759\u6001\u8d44\u6e90\u5b58\u50a8\u5230\u672c\u5730\u786c\u76d8\u4e2d\uff0c\u8fd9\u4e9b\u88ab\u5b58\u50a8\u4e0b\u6765\u7684\u8d44\u6e90\u53eb\u505a\u7f13\u5b58,\u7531http/1\u5f15\u5165',
+              '\u6d4f\u89c8\u5668\u5c06\u4e4b\u524d\u8bf7\u6c42\u7684\u9759\u6001\u8d44\u6e90\u5b58\u50a8\u5230\u672c\u5730\u786c\u76d8\u4e2d\uff0c\u8fd9\u4e9b\u88ab\u5b58\u50a8\u4e0b\u6765\u7684\u8d44\u6e90\u53eb\u505a\u7f13\u5b58,\u7531 http/1 \u5f15\u5165',
             ),
             o.a.createElement(
               'h3',
@@ -5908,7 +5903,7 @@
             o.a.createElement(
               'p',
               null,
-              'URL\u62fc\u63a5\u5b8c\u6bd5\u540e\uff0c\u5728\u7f51\u7edc\u8fdb\u7a0b\u4e2d\u53d1\u9001\u8bf7\u6c42\u4e4b\u524d\uff0c\u4f1a\u67e5\u8be2\u662f\u5426\u5b58\u5728\u7f13\u5b58\u8d44\u6e90',
+              'URL \u62fc\u63a5\u5b8c\u6bd5\u540e\uff0c\u5728\u7f51\u7edc\u8fdb\u7a0b\u4e2d\u53d1\u9001\u8bf7\u6c42\u4e4b\u524d\uff0c\u4f1a\u67e5\u8be2\u662f\u5426\u5b58\u5728\u7f13\u5b58\u8d44\u6e90',
             ),
             o.a.createElement(
               'h3',
@@ -6084,7 +6079,7 @@
                 o.a.createElement(
                   'p',
                   null,
-                  '\u7f13\u5b58\u65f6\u95f4\u4e0d\u7075\u6d3b\uff1aexpires\u5b57\u6bb5\u6307\u5b9a\u7684\u662f\u4e00\u4e2a\u5177\u4f53\u7684\u8fc7\u671f\u65f6\u95f4\uff0c\u5982\u679c\u5728\u8fd9\u4e2a\u65f6\u95f4\u4e4b\u524d\u6709\u6570\u636e\u66f4\u65b0\uff0c\u5ba2\u6237\u7aef\u4e5f\u65e0\u6cd5\u83b7\u53d6\u5230\u6700\u65b0\u7684\u6570\u636e\u3002',
+                  '\u7f13\u5b58\u65f6\u95f4\u4e0d\u7075\u6d3b\uff1aexpires \u5b57\u6bb5\u6307\u5b9a\u7684\u662f\u4e00\u4e2a\u5177\u4f53\u7684\u8fc7\u671f\u65f6\u95f4\uff0c\u5982\u679c\u5728\u8fd9\u4e2a\u65f6\u95f4\u4e4b\u524d\u6709\u6570\u636e\u66f4\u65b0\uff0c\u5ba2\u6237\u7aef\u4e5f\u65e0\u6cd5\u83b7\u53d6\u5230\u6700\u65b0\u7684\u6570\u636e\u3002',
                 ),
               ),
               o.a.createElement(
@@ -6093,7 +6088,7 @@
                 o.a.createElement(
                   'p',
                   null,
-                  '\u4f9d\u8d56\u4e8e\u5ba2\u6237\u7aef\u65f6\u95f4\uff1aexpires\u5b57\u6bb5\u662f\u57fa\u4e8e\u5ba2\u6237\u7aef\u65f6\u95f4\u7684\uff0c\u5982\u679c\u5ba2\u6237\u7aef\u7684\u65f6\u95f4\u4e0e\u670d\u52a1\u5668\u65f6\u95f4\u4e0d\u540c\u6b65\uff0c\u5c31\u4f1a\u5bfc\u81f4\u7f13\u5b58\u5931\u6548\u3002',
+                  '\u4f9d\u8d56\u4e8e\u5ba2\u6237\u7aef\u65f6\u95f4\uff1aexpires \u5b57\u6bb5\u662f\u57fa\u4e8e\u5ba2\u6237\u7aef\u65f6\u95f4\u7684\uff0c\u5982\u679c\u5ba2\u6237\u7aef\u7684\u65f6\u95f4\u4e0e\u670d\u52a1\u5668\u65f6\u95f4\u4e0d\u540c\u6b65\uff0c\u5c31\u4f1a\u5bfc\u81f4\u7f13\u5b58\u5931\u6548\u3002',
                 ),
               ),
               o.a.createElement(
@@ -6102,7 +6097,7 @@
                 o.a.createElement(
                   'p',
                   null,
-                  '\u65e0\u6cd5\u901a\u8fc7HTTP\u5934\u90e8\u63a7\u5236\u7f13\u5b58\uff1aexpires\u5b57\u6bb5\u53ea\u80fd\u901a\u8fc7\u670d\u52a1\u5668\u54cd\u5e94\u5934\u90e8\u53d1\u9001\uff0c\u65e0\u6cd5\u901a\u8fc7HTTP\u5934\u90e8\u63a7\u5236\u7f13\u5b58\uff0c\u65e0\u6cd5\u5bf9\u4e0d\u540c\u7684\u8d44\u6e90\u8bbe\u7f6e\u4e0d\u540c\u7684\u7f13\u5b58\u65f6\u95f4\u3002',
+                  '\u65e0\u6cd5\u901a\u8fc7 HTTP \u5934\u90e8\u63a7\u5236\u7f13\u5b58\uff1aexpires \u5b57\u6bb5\u53ea\u80fd\u901a\u8fc7\u670d\u52a1\u5668\u54cd\u5e94\u5934\u90e8\u53d1\u9001\uff0c\u65e0\u6cd5\u901a\u8fc7 HTTP \u5934\u90e8\u63a7\u5236\u7f13\u5b58\uff0c\u65e0\u6cd5\u5bf9\u4e0d\u540c\u7684\u8d44\u6e90\u8bbe\u7f6e\u4e0d\u540c\u7684\u7f13\u5b58\u65f6\u95f4\u3002',
                 ),
               ),
               o.a.createElement(
@@ -6111,7 +6106,7 @@
                 o.a.createElement(
                   'p',
                   null,
-                  '\u4e0d\u652f\u6301\u79d2\u7ea7\u7f13\u5b58\uff1aexpires\u5b57\u6bb5\u53ea\u80fd\u8bbe\u7f6e\u5230\u79d2\u7ea7\u522b\uff0c\u65e0\u6cd5\u5b9e\u73b0\u66f4\u7cbe\u7ec6\u7684\u7f13\u5b58\u63a7\u5236\u3002',
+                  '\u4e0d\u652f\u6301\u79d2\u7ea7\u7f13\u5b58\uff1aexpires \u5b57\u6bb5\u53ea\u80fd\u8bbe\u7f6e\u5230\u79d2\u7ea7\u522b\uff0c\u65e0\u6cd5\u5b9e\u73b0\u66f4\u7cbe\u7ec6\u7684\u7f13\u5b58\u63a7\u5236\u3002',
                 ),
               ),
             ),
@@ -6141,23 +6136,22 @@
               o.a.createElement(
                 'li',
                 null,
-                '\u8bbe\u7f6e\u4e86cache-control: no-cache\u5b57\u6bb5',
+                '\u8bbe\u7f6e\u4e86 cache-control: no-cache \u5b57\u6bb5',
               ),
-              o.a.createElement('li', null, '\u5f3a\u7f13\u5b58\u8fc7\u671f'),
-            ),
-            o.a.createElement(
-              'p',
-              null,
-              '\u603b\u7ed3\uff1a\u5f97\u8bbe\u7f6e\u4e86\u5f3a\u7f13\u5b58\uff0c\u4f46\u662f\u5f3a\u7f13\u5b58\u5931\u6548\u6216\u8005\u4e0d\u7528\u7684\u65f6\u5019\u4f1a\u8d70\u5230\u534f\u5546\u7f13\u5b58',
+              o.a.createElement(
+                'li',
+                null,
+                '\u5f3a\u7f13\u5b58\u8fc7\u671f \u603b\u7ed3\uff1a\u5f97\u8bbe\u7f6e\u4e86\u5f3a\u7f13\u5b58\uff0c\u4f46\u662f\u5f3a\u7f13\u5b58\u5931\u6548\u6216\u8005\u4e0d\u7528\u7684\u65f6\u5019\u4f1a\u8d70\u5230\u534f\u5546\u7f13\u5b58',
+              ),
             ),
             o.a.createElement(
               'p',
               null,
               '\u54cd\u5e94\u5934\u5b57\u6bb5:',
               o.a.createElement('code', null, 'ETag'),
-              ': http/1.1\u4ea7\u7269\uff0c\u8fd4\u56de\u8d44\u6e90\u7684\u552f\u4e00\u6807\u8bc6',
+              ': http/1.1 \u4ea7\u7269\uff0c\u8fd4\u56de\u8d44\u6e90\u7684\u552f\u4e00\u6807\u8bc6',
               o.a.createElement('code', null, 'Last-Modified'),
-              ': http/1\u7684\u4ea7\u7269\uff0c\u8fd4\u56de\u8d44\u6e90\u4e0a\u6b21\u4fee\u6539\u7684\u65f6\u95f4',
+              ': http/1 \u7684\u4ea7\u7269\uff0c\u8fd4\u56de\u8d44\u6e90\u4e0a\u6b21\u4fee\u6539\u7684\u65f6\u95f4',
             ),
             o.a.createElement(
               'p',
@@ -6208,12 +6202,12 @@
               o.a.createElement(
                 'li',
                 null,
-                '\u670d\u52a1\u5668\u8d44\u6e90\u672a\u4fee\u6539\u5219\u8fd4\u56de304\uff0c\u544a\u8bc9\u6d4f\u89c8\u5668\u53ef\u4ee5\u76f4\u63a5\u4f7f\u7528\u7f13\u5b58',
+                '\u670d\u52a1\u5668\u8d44\u6e90\u672a\u4fee\u6539\u5219\u8fd4\u56de 304\uff0c\u544a\u8bc9\u6d4f\u89c8\u5668\u53ef\u4ee5\u76f4\u63a5\u4f7f\u7528\u7f13\u5b58',
               ),
               o.a.createElement(
                 'li',
                 null,
-                '\u670d\u52a1\u5668\u8d44\u6e90\u4fee\u6539\uff0c\u8fd4\u56de\u72b6\u6001\u7801200\uff0c\u5e76\u8fd4\u56de\u6700\u65b0\u8d44\u6e90',
+                '\u670d\u52a1\u5668\u8d44\u6e90\u4fee\u6539\uff0c\u8fd4\u56de\u72b6\u6001\u7801 200\uff0c\u5e76\u8fd4\u56de\u6700\u65b0\u8d44\u6e90',
               ),
             ),
           ),
@@ -7132,7 +7126,7 @@
               o.a.createElement('code', null, '\u5b57\u8282'),
               '\u3001',
               o.a.createElement('code', null, '\u767e\u5ea6'),
-              '\u7b49\u516c\u53f8\u7684offer, \u6700\u540e\u7ecf\u8fc7\u6743\u8861\u6bd4\u8f83\u5165\u804c\u4e86\u5b57\u8282',
+              '\u7b49\u516c\u53f8\u7684 offer, \u6700\u540e\u7ecf\u8fc7\u6743\u8861\u6bd4\u8f83\u5165\u804c\u4e86\u5b57\u8282',
             ),
             o.a.createElement(
               'h2',
@@ -7160,7 +7154,7 @@
               o.a.createElement('br', null),
               '\u5165\u804c\u4e00\u6bb5\u65f6\u95f4\u540e\u4e3b\u8981\u662f\u5bf9',
               o.a.createElement('code', null, 'C\u7aef'),
-              '\u4ea7\u54c1\u7684\u4e00\u4e9b\u8fed\u4ee3\uff0c\u540e\u6765\u627f\u63a5\u4e86\u4e00\u4e2aC\u7aef\u4ea7\u54c1\u7684',
+              '\u4ea7\u54c1\u7684\u4e00\u4e9b\u8fed\u4ee3\uff0c\u540e\u6765\u627f\u63a5\u4e86\u4e00\u4e2a C \u7aef\u4ea7\u54c1\u7684',
               o.a.createElement('code', null, '\u4ece\u96f6\u5230\u4e00'),
               '\u7684\u642d\u5efa\u3002',
               o.a.createElement('br', null),
@@ -7182,7 +7176,7 @@
               o.a.createElement('code', null, 'BFF'),
               '\u63a5\u53e3\u8fd4\u56de',
               o.a.createElement('code', null, 'html'),
-              '\u6587\u4ef6\u6765\u5b9e\u73b0\u5b50\u5e94\u7528\u7684\u6e32\u67d3\u3002 \u800cBFF\u5c42\u5bf9\u4e8e\u524d\u7aef\u7684\u611f\u77e5\u6765\u8bf4\u5374\u662f\u53ef\u6709\u53ef\u65e0\u7684\u751a\u81f3\u8bf4\u662f\u4e00\u79cd\u8d1f\u62c5\uff0c\u57fa\u672c\u4e0a\u662f\u5bf9\u540e\u7aefRPC\u670d\u52a1\u7684\u63a5\u53e3\u8f6c\u53d1\u548cthrift\u6587\u4ef6\u5b9a\u4e49\uff0c\u6240\u4ee5\u540e\u7eed\u7684\u5de5\u4f5c\u4e3b\u8981\u662f',
+              '\u6587\u4ef6\u6765\u5b9e\u73b0\u5b50\u5e94\u7528\u7684\u6e32\u67d3\u3002 \u800c BFF \u5c42\u5bf9\u4e8e\u524d\u7aef\u7684\u611f\u77e5\u6765\u8bf4\u5374\u662f\u53ef\u6709\u53ef\u65e0\u7684\u751a\u81f3\u8bf4\u662f\u4e00\u79cd\u8d1f\u62c5\uff0c\u57fa\u672c\u4e0a\u662f\u5bf9\u540e\u7aef RPC \u670d\u52a1\u7684\u63a5\u53e3\u8f6c\u53d1\u548c thrift \u6587\u4ef6\u5b9a\u4e49\uff0c\u6240\u4ee5\u540e\u7eed\u7684\u5de5\u4f5c\u4e3b\u8981\u662f',
               o.a.createElement(
                 'code',
                 null,
@@ -11012,21 +11006,21 @@
             o.a.createElement(
               'p',
               null,
-              '\u7528\u4e8e\u5b66\u672f\u4ea4\u6d41\uff0c\u8d77\u521d\u7684\u9700\u6c42\u5f88\u7b80\u5355\uff0c\u53ea\u9700\u8981\u4f20\u8f93html\u6587\u4ef6\u5c31\u884c\u4e86,\u56e0\u6b64\u4ed6\u4e5f\u4ec5\u652f\u6301get\u65b9\u6cd5\u548c',
+              '\u7528\u4e8e\u5b66\u672f\u4ea4\u6d41\uff0c\u8d77\u521d\u7684\u9700\u6c42\u5f88\u7b80\u5355\uff0c\u53ea\u9700\u8981\u4f20\u8f93 html \u6587\u4ef6\u5c31\u884c\u4e86,\u56e0\u6b64\u4ed6\u4e5f\u4ec5\u652f\u6301 get \u65b9\u6cd5\u548c',
             ),
             o.a.createElement(
               'h3',
-              { id: 'httt09\u7279\u70b9' },
+              { id: 'httt09-\u7279\u70b9' },
               o.a.createElement(
                 a['AnchorLink'],
                 {
-                  to: '#httt09\u7279\u70b9',
+                  to: '#httt09-\u7279\u70b9',
                   'aria-hidden': 'true',
                   tabIndex: -1,
                 },
                 o.a.createElement('span', { className: 'icon icon-link' }),
               ),
-              'httt/0.9\u7279\u70b9',
+              'httt/0.9 \u7279\u70b9',
             ),
             o.a.createElement(
               'ol',
@@ -11044,7 +11038,7 @@
               o.a.createElement(
                 'li',
                 null,
-                '\u8fd4\u56de\u7684 html \u6587\u4ef6\u90fd\u662f\u90fd\u662fASCII\u7801\u5b57\u7b26\u6d41\u4f20\u8f93\u7684,\u56e0\u4e3a\u90fd\u662fhtml \u683c\u5f0f\u7684\u6587\u4ef6',
+                '\u8fd4\u56de\u7684 html \u6587\u4ef6\u90fd\u662f\u90fd\u662f ASCII \u7801\u5b57\u7b26\u6d41\u4f20\u8f93\u7684,\u56e0\u4e3a\u90fd\u662f html \u683c\u5f0f\u7684\u6587\u4ef6',
               ),
               o.a.createElement(
                 'li',
@@ -11076,23 +11070,23 @@
             o.a.createElement(
               'p',
               null,
-              '\u968f\u7740\u7f51\u7edc\u7684\u53d1\u5c55\uff0c\u4eba\u4eec\u5bf9\u7f51\u7edc\u7684\u8bc9\u6c42\u8d8a\u6765\u8d8a\u591a\uff0chttp\u4e0d\u4ec5\u9700\u8981\u4f20\u8f93html\u4e86\u3002',
+              '\u968f\u7740\u7f51\u7edc\u7684\u53d1\u5c55\uff0c\u4eba\u4eec\u5bf9\u7f51\u7edc\u7684\u8bc9\u6c42\u8d8a\u6765\u8d8a\u591a\uff0chttp \u4e0d\u4ec5\u9700\u8981\u4f20\u8f93 html \u4e86\u3002',
               o.a.createElement('br', null),
               '\u4ed6\u8fd8\u9700\u8981\u652f\u6301\u66f4\u591a\u7684\u5185\u5bb9\uff0cCSS\uff0c\u56fe\u7247\u3001\u89c6\u9891\u3001\u97f3\u9891\u7b49',
             ),
             o.a.createElement(
               'h3',
-              { id: 'http1\u7279\u70b9' },
+              { id: 'http1-\u7279\u70b9' },
               o.a.createElement(
                 a['AnchorLink'],
                 {
-                  to: '#http1\u7279\u70b9',
+                  to: '#http1-\u7279\u70b9',
                   'aria-hidden': 'true',
                   tabIndex: -1,
                 },
                 o.a.createElement('span', { className: 'icon icon-link' }),
               ),
-              'http/1\u7279\u70b9',
+              'http/1 \u7279\u70b9',
             ),
             o.a.createElement(
               'ol',
@@ -11100,7 +11094,7 @@
               o.a.createElement(
                 'li',
                 null,
-                '\u5f15\u5165\u8bf7\u6c42\u5934\u548c\u54cd\u5e94\u5934, \u901a\u8fc7Accept-x\u7b49\u5b57\u6bb5\u5b9e\u73b0\u671f\u671b\u8fd4\u56de\u7684\u8d44\u6e90\u7c7b\u578b\u3001\u538b\u7f29\u65b9\u5f0f\u3001\u7f16\u7801\u7c7b\u578b\u3001\u8bed\u8a00\u7b49',
+                '\u5f15\u5165\u8bf7\u6c42\u5934\u548c\u54cd\u5e94\u5934, \u901a\u8fc7 Accept-x \u7b49\u5b57\u6bb5\u5b9e\u73b0\u671f\u671b\u8fd4\u56de\u7684\u8d44\u6e90\u7c7b\u578b\u3001\u538b\u7f29\u65b9\u5f0f\u3001\u7f16\u7801\u7c7b\u578b\u3001\u8bed\u8a00\u7b49',
               ),
               o.a.createElement(
                 'li',
@@ -11115,17 +11109,17 @@
             ),
             o.a.createElement(
               'h3',
-              { id: 'http1\u7f3a\u70b9' },
+              { id: 'http1-\u7f3a\u70b9' },
               o.a.createElement(
                 a['AnchorLink'],
                 {
-                  to: '#http1\u7f3a\u70b9',
+                  to: '#http1-\u7f3a\u70b9',
                   'aria-hidden': 'true',
                   tabIndex: -1,
                 },
                 o.a.createElement('span', { className: 'icon icon-link' }),
               ),
-              'http/1\u7f3a\u70b9',
+              'http/1 \u7f3a\u70b9',
             ),
             o.a.createElement(
               'ol',
@@ -11133,22 +11127,22 @@
               o.a.createElement(
                 'li',
                 null,
-                '\u6027\u80fd\u95ee\u9898\uff1aHTTP/1.0\u6bcf\u6b21\u8bf7\u6c42\u90fd\u9700\u8981\u5efa\u7acb\u65b0\u7684TCP\u8fde\u63a5\uff0c\u8fd9\u4f1a\u5bfc\u81f4\u7f51\u7edc\u5ef6\u8fdf\u548c\u8d44\u6e90\u6d6a\u8d39\u3002',
+                '\u6027\u80fd\u95ee\u9898\uff1aHTTP/1.0 \u6bcf\u6b21\u8bf7\u6c42\u90fd\u9700\u8981\u5efa\u7acb\u65b0\u7684 TCP \u8fde\u63a5\uff0c\u8fd9\u4f1a\u5bfc\u81f4\u7f51\u7edc\u5ef6\u8fdf\u548c\u8d44\u6e90\u6d6a\u8d39\u3002',
               ),
               o.a.createElement(
                 'li',
                 null,
-                '\u4f20\u8f93\u6548\u7387\u4f4e\uff1aHTTP/1.0\u4f20\u8f93\u6570\u636e\u65f6\uff0c\u6bcf\u4e2a\u8bf7\u6c42\u548c\u54cd\u5e94\u90fd\u5fc5\u987b\u5305\u542b\u5b8c\u6574\u7684HTTP\u5934\u90e8\u4fe1\u606f\uff0c\u8fd9\u4f1a\u5bfc\u81f4\u4f20\u8f93\u6548\u7387\u4f4e\u4e0b\u3002',
+                '\u4f20\u8f93\u6548\u7387\u4f4e\uff1aHTTP/1.0 \u4f20\u8f93\u6570\u636e\u65f6\uff0c\u6bcf\u4e2a\u8bf7\u6c42\u548c\u54cd\u5e94\u90fd\u5fc5\u987b\u5305\u542b\u5b8c\u6574\u7684 HTTP \u5934\u90e8\u4fe1\u606f\uff0c\u8fd9\u4f1a\u5bfc\u81f4\u4f20\u8f93\u6548\u7387\u4f4e\u4e0b\u3002',
               ),
               o.a.createElement(
                 'li',
                 null,
-                '\u65e0\u6cd5\u5904\u7406\u52a8\u6001\u5185\u5bb9\uff1aHTTP/1.0\u53ea\u80fd\u5904\u7406\u9759\u6001\u8d44\u6e90\uff0c\u65e0\u6cd5\u5904\u7406\u52a8\u6001\u5185\u5bb9\uff0c\u5982\u4ea4\u4e92\u5f0fWeb\u5e94\u7528\u7a0b\u5e8f\u3002',
+                '\u65e0\u6cd5\u5904\u7406\u52a8\u6001\u5185\u5bb9\uff1aHTTP/1.0 \u53ea\u80fd\u5904\u7406\u9759\u6001\u8d44\u6e90\uff0c\u65e0\u6cd5\u5904\u7406\u52a8\u6001\u5185\u5bb9\uff0c\u5982\u4ea4\u4e92\u5f0f Web \u5e94\u7528\u7a0b\u5e8f\u3002',
               ),
               o.a.createElement(
                 'li',
                 null,
-                '\u5b89\u5168\u6027\u95ee\u9898\uff1aHTTP/1.0\u4e0d\u652f\u6301\u52a0\u5bc6\uff0c\u6570\u636e\u4f20\u8f93\u65f6\u5b58\u5728\u5b89\u5168\u9690\u60a3\u3002',
+                '\u5b89\u5168\u6027\u95ee\u9898\uff1aHTTP/1.0 \u4e0d\u652f\u6301\u52a0\u5bc6\uff0c\u6570\u636e\u4f20\u8f93\u65f6\u5b58\u5728\u5b89\u5168\u9690\u60a3\u3002',
               ),
             ),
             o.a.createElement(
@@ -11174,21 +11168,21 @@
             o.a.createElement(
               'p',
               null,
-              '\u56e0\u4e3ahttp/1\u7684\u6027\u80fd\u548c\u5b89\u5168\u95ee\u9898\u6bd4\u8f83\u660e\u663e\uff0chttp/1.1\u662f\u57fa\u4e8ehttp/1\u7684\u57fa\u7840\u4e4b\u4e0a\u8fdb\u884c\u4e86\u6539\u826f\uff08\u7f1d\u8865\uff09',
+              '\u56e0\u4e3a http/1 \u7684\u6027\u80fd\u548c\u5b89\u5168\u95ee\u9898\u6bd4\u8f83\u660e\u663e\uff0chttp/1.1 \u662f\u57fa\u4e8e http/1 \u7684\u57fa\u7840\u4e4b\u4e0a\u8fdb\u884c\u4e86\u6539\u826f\uff08\u7f1d\u8865\uff09',
             ),
             o.a.createElement(
               'h3',
-              { id: 'http11\u7279\u70b9' },
+              { id: 'http11-\u7279\u70b9' },
               o.a.createElement(
                 a['AnchorLink'],
                 {
-                  to: '#http11\u7279\u70b9',
+                  to: '#http11-\u7279\u70b9',
                   'aria-hidden': 'true',
                   tabIndex: -1,
                 },
                 o.a.createElement('span', { className: 'icon icon-link' }),
               ),
-              'http/1.1\u7279\u70b9',
+              'http/1.1 \u7279\u70b9',
             ),
             o.a.createElement(
               'ol',
@@ -11196,7 +11190,7 @@
               o.a.createElement(
                 'li',
                 null,
-                '\u6301\u4e45\u5316\u8fde\u63a5\u6539\u5584http/1\u6bcf\u6b21\u8bf7\u6c42\u90fd\u9700\u8981\u5efa\u7acb\u8fde\u63a5\u7684\u95ee\u9898\uff0c\u53ea\u6709\u6d4f\u89c8\u5668\u548c\u670d\u52a1\u5668\u6ca1\u6709\u660e\u786e\u65ad\u5f00\u8fde\u63a5\u5c31\u4f1a\u4e00\u76f4\u4fdd\u6301(\u9ed8\u8ba4\u5f00\u542f\u4e14\u4e00\u4e2a\u57df\u540d\u6700\u591a\u516d\u4e2a\u6301\u4e45\u5316\u8fde\u63a5)',
+                '\u6301\u4e45\u5316\u8fde\u63a5\u6539\u5584 http/1 \u6bcf\u6b21\u8bf7\u6c42\u90fd\u9700\u8981\u5efa\u7acb\u8fde\u63a5\u7684\u95ee\u9898\uff0c\u53ea\u6709\u6d4f\u89c8\u5668\u548c\u670d\u52a1\u5668\u6ca1\u6709\u660e\u786e\u65ad\u5f00\u8fde\u63a5\u5c31\u4f1a\u4e00\u76f4\u4fdd\u6301(\u9ed8\u8ba4\u5f00\u542f\u4e14\u4e00\u4e2a\u57df\u540d\u6700\u591a\u516d\u4e2a\u6301\u4e45\u5316\u8fde\u63a5)',
               ),
               o.a.createElement(
                 'li',
@@ -11217,17 +11211,17 @@
             ),
             o.a.createElement(
               'h3',
-              { id: 'http11\u7f3a\u70b9' },
+              { id: 'http11-\u7f3a\u70b9' },
               o.a.createElement(
                 a['AnchorLink'],
                 {
-                  to: '#http11\u7f3a\u70b9',
+                  to: '#http11-\u7f3a\u70b9',
                   'aria-hidden': 'true',
                   tabIndex: -1,
                 },
                 o.a.createElement('span', { className: 'icon icon-link' }),
               ),
-              'http/1.1\u7f3a\u70b9',
+              'http/1.1 \u7f3a\u70b9',
             ),
             o.a.createElement(
               'ol',
@@ -11266,21 +11260,21 @@
             o.a.createElement(
               'p',
               null,
-              '\u56e0\u4e3ahttp/1.1\u5b58\u5728 TCP \u8fde\u63a5\u6162\u542f\u52a8\u3001http \u961f\u5934\u963b\u585e\u4ee5\u53ca\u516d\u6761\u8fde\u63a5\u7ade\u4e89\u56fa\u5b9a\u5e26\u5bbd\u7b49\u95ee\u9898\u5bfc\u81f4\u4f20\u8f93\u6548\u7387\u4f4e\u4e0b',
+              '\u56e0\u4e3a http/1.1 \u5b58\u5728 TCP \u8fde\u63a5\u6162\u542f\u52a8\u3001http \u961f\u5934\u963b\u585e\u4ee5\u53ca\u516d\u6761\u8fde\u63a5\u7ade\u4e89\u56fa\u5b9a\u5e26\u5bbd\u7b49\u95ee\u9898\u5bfc\u81f4\u4f20\u8f93\u6548\u7387\u4f4e\u4e0b',
             ),
             o.a.createElement(
               'h3',
-              { id: 'http2\u7279\u70b9' },
+              { id: 'http2-\u7279\u70b9' },
               o.a.createElement(
                 a['AnchorLink'],
                 {
-                  to: '#http2\u7279\u70b9',
+                  to: '#http2-\u7279\u70b9',
                   'aria-hidden': 'true',
                   tabIndex: -1,
                 },
                 o.a.createElement('span', { className: 'icon icon-link' }),
               ),
-              'http/2\u7279\u70b9',
+              'http/2 \u7279\u70b9',
             ),
             o.a.createElement(
               'p',
@@ -11293,7 +11287,7 @@
               o.a.createElement(
                 'li',
                 null,
-                '\u4e00\u4e2a\u57df\u540d\u53ea\u4f7f\u7528\u4e00\u4e2aTCP\u957f\u8fde\u63a5\uff0c\u6162\u4e5f\u53ea\u6162\u8fd9\u4e00\u6b21\uff0c\u907f\u514d\u4e86\u6162\u542f\u52a8\u3001\u591a\u6761\u8fde\u63a5\u7ade\u4e89\u56fa\u5b9a\u5e26\u5bbd\u7684\u95ee\u9898',
+                '\u4e00\u4e2a\u57df\u540d\u53ea\u4f7f\u7528\u4e00\u4e2a TCP \u957f\u8fde\u63a5\uff0c\u6162\u4e5f\u53ea\u6162\u8fd9\u4e00\u6b21\uff0c\u907f\u514d\u4e86\u6162\u542f\u52a8\u3001\u591a\u6761\u8fde\u63a5\u7ade\u4e89\u56fa\u5b9a\u5e26\u5bbd\u7684\u95ee\u9898',
               ),
               o.a.createElement(
                 'li',
@@ -11318,17 +11312,17 @@
             ),
             o.a.createElement(
               'h3',
-              { id: 'http2\u7f3a\u70b9' },
+              { id: 'http2-\u7f3a\u70b9' },
               o.a.createElement(
                 a['AnchorLink'],
                 {
-                  to: '#http2\u7f3a\u70b9',
+                  to: '#http2-\u7f3a\u70b9',
                   'aria-hidden': 'true',
                   tabIndex: -1,
                 },
                 o.a.createElement('span', { className: 'icon icon-link' }),
               ),
-              'http/2\u7f3a\u70b9',
+              'http/2 \u7f3a\u70b9',
             ),
             o.a.createElement(
               'ol',
@@ -11336,12 +11330,12 @@
               o.a.createElement(
                 'li',
                 null,
-                '\u5bf9\u670d\u52a1\u5668\u6709\u8981\u6c42\uff0c\u5982\u679c\u9700\u8981 TSL \u52a0\u5bc6\uff0c\u670d\u52a1\u5668\u9700\u8981\u652f\u6301 TSL1.2\u53ca\u4ee5\u4e0a\u7248\u672c',
+                '\u5bf9\u670d\u52a1\u5668\u6709\u8981\u6c42\uff0c\u5982\u679c\u9700\u8981 TSL \u52a0\u5bc6\uff0c\u670d\u52a1\u5668\u9700\u8981\u652f\u6301 TSL1.2 \u53ca\u4ee5\u4e0a\u7248\u672c',
               ),
               o.a.createElement(
                 'li',
                 null,
-                'http/2\u4e0d\u662f\u6240\u6709\u6d4f\u89c8\u5668\u548c\u670d\u52a1\u90fd\u517c\u5bb9',
+                'http/2 \u4e0d\u662f\u6240\u6709\u6d4f\u89c8\u5668\u548c\u670d\u52a1\u90fd\u517c\u5bb9',
               ),
               o.a.createElement(
                 'li',
@@ -11431,17 +11425,17 @@
             ),
             o.a.createElement(
               'h3',
-              { id: 'http3\u7279\u70b9' },
+              { id: 'http3-\u7279\u70b9' },
               o.a.createElement(
                 a['AnchorLink'],
                 {
-                  to: '#http3\u7279\u70b9',
+                  to: '#http3-\u7279\u70b9',
                   'aria-hidden': 'true',
                   tabIndex: -1,
                 },
                 o.a.createElement('span', { className: 'icon icon-link' }),
               ),
-              'http/3\u7279\u70b9',
+              'http/3 \u7279\u70b9',
             ),
             o.a.createElement(
               'ol',
@@ -11449,22 +11443,22 @@
               o.a.createElement(
                 'li',
                 null,
-                '\u57fa\u4e8eUDP \u534f\u8bae\u5b9e\u73b0\u7684\u53ef\u9760\u4f20\u8f93QUICk\uff0c\u66f4\u5feb\u7684\u901f\u5ea6\uff0c\u907f\u514d\u4e86 TCP \u534f\u8bae\u56e0\u4e3a\u4e00\u4e2a\u6570\u636e\u5305\u4e22\u5931\u800c\u4ea7\u751f\u4e86\u6574\u4e2a\u8fde\u63a5\u6682\u505c',
+                '\u57fa\u4e8e UDP \u534f\u8bae\u5b9e\u73b0\u7684\u53ef\u9760\u4f20\u8f93 QUICk\uff0c\u66f4\u5feb\u7684\u901f\u5ea6\uff0c\u907f\u514d\u4e86 TCP \u534f\u8bae\u56e0\u4e3a\u4e00\u4e2a\u6570\u636e\u5305\u4e22\u5931\u800c\u4ea7\u751f\u4e86\u6574\u4e2a\u8fde\u63a5\u6682\u505c',
               ),
             ),
             o.a.createElement(
               'h3',
-              { id: 'http3\u7f3a\u70b9' },
+              { id: 'http3-\u7f3a\u70b9' },
               o.a.createElement(
                 a['AnchorLink'],
                 {
-                  to: '#http3\u7f3a\u70b9',
+                  to: '#http3-\u7f3a\u70b9',
                   'aria-hidden': 'true',
                   tabIndex: -1,
                 },
                 o.a.createElement('span', { className: 'icon icon-link' }),
               ),
-              'http/3\u7f3a\u70b9',
+              'http/3 \u7f3a\u70b9',
             ),
             o.a.createElement(
               'ol',
@@ -11472,7 +11466,7 @@
               o.a.createElement(
                 'li',
                 null,
-                '\u548c http2\u4e00\u6837\u5b58\u5728\u4e0d\u517c\u5bb9\u95ee\u9898',
+                '\u548c http2 \u4e00\u6837\u5b58\u5728\u4e0d\u517c\u5bb9\u95ee\u9898',
               ),
               o.a.createElement(
                 'li',
@@ -28887,17 +28881,17 @@
             { className: 'markdown' },
             o.a.createElement(
               'h1',
-              { id: 'axios\u6e90\u7801\u6d45\u8bfb' },
+              { id: 'axios-\u6e90\u7801\u6d45\u8bfb' },
               o.a.createElement(
                 a['AnchorLink'],
                 {
-                  to: '#axios\u6e90\u7801\u6d45\u8bfb',
+                  to: '#axios-\u6e90\u7801\u6d45\u8bfb',
                   'aria-hidden': 'true',
                   tabIndex: -1,
                 },
                 o.a.createElement('span', { className: 'icon icon-link' }),
               ),
-              'axios\u6e90\u7801\u6d45\u8bfb',
+              'axios \u6e90\u7801\u6d45\u8bfb',
             ),
             o.a.createElement(
               'h2',
@@ -28915,7 +28909,7 @@
               o.a.createElement(
                 'p',
                 null,
-                '\u4e3a\u4e86\u65b9\u4fbf\u8c03\u8bd5\u62e6\u622a\u5668\u90e8\u5206\u76f8\u5173\u5185\u5bb9\uff0c\u5728\u672c\u5730\u542f\u52a8\u4e00\u4e2anode\u670d\u52a1\u6765\u6a21\u62df\u5b9e\u9645\u7f51\u7edc\u8bf7\u6c42\u3002',
+                '\u4e3a\u4e86\u65b9\u4fbf\u8c03\u8bd5\u62e6\u622a\u5668\u90e8\u5206\u76f8\u5173\u5185\u5bb9\uff0c\u5728\u672c\u5730\u542f\u52a8\u4e00\u4e2a node \u670d\u52a1\u6765\u6a21\u62df\u5b9e\u9645\u7f51\u7edc\u8bf7\u6c42\u3002',
                 o.a.createElement('br', null),
                 '\u81ea\u5b9a\u4e49\u54cd\u5e94\u5185\u5bb9\u4e5f\u53ef\u4ee5\u6ee1\u8db3\u54cd\u5e94\u62e6\u622a\u7684\u9700\u8981',
               ),
@@ -28931,17 +28925,17 @@
               o.a.createElement(
                 'li',
                 null,
-                '\u672c\u5730\u542f\u52a8node\u670d\u52a1\uff0c\u670d\u52a1\u5b9e\u9645\u7f51\u7edc\u8bf7\u6c42',
+                '\u672c\u5730\u542f\u52a8 node \u670d\u52a1\uff0c\u670d\u52a1\u5b9e\u9645\u7f51\u7edc\u8bf7\u6c42',
               ),
               o.a.createElement(
                 'li',
                 null,
-                '\u5c06axios npm link\u751f\u6210\u8f6f\u8fde\u63a5',
+                '\u5c06 axios npm link \u751f\u6210\u8f6f\u8fde\u63a5',
               ),
               o.a.createElement(
                 'li',
                 null,
-                '\u5728\u9879\u76ee\u4e2d\u4e0b\u8f7daxios \u5e76\u6839\u636e\u81ea\u5df1\u7684ip\u5730\u5740\u548c\u8bf7\u6c42\u8def\u7531\u8fdb\u884c\u7f51\u7edc\u8bf7\u6c42\u8c03\u7528',
+                '\u5728\u9879\u76ee\u4e2d\u4e0b\u8f7d axios \u5e76\u6839\u636e\u81ea\u5df1\u7684 ip \u5730\u5740\u548c\u8bf7\u6c42\u8def\u7531\u8fdb\u884c\u7f51\u7edc\u8bf7\u6c42\u8c03\u7528',
               ),
             ),
             o.a.createElement(
@@ -28959,7 +28953,7 @@
               'node \u670d\u52a1\u4ee3\u7801',
             ),
             o.a.createElement(i['a'], {
-              code: "const express = require('express');\nconst cors = require('cors');\nconst app = express();\n\napp.use(cors());\n\napp.get('/data', function (req, res) {\n    const result = {\n        a: 1,\n        b: 2\n    }\n    res.send(result)\n})\n\nconst server = app.listen(8000, function(req, res) {\n    console.log('8000 \u7aef\u53e3\u542f\u52a8\u6210\u529f');\n})",
+              code: "const express = require('express');\nconst cors = require('cors');\nconst app = express();\n\napp.use(cors());\n\napp.get('/data', function (req, res) {\n  const result = {\n    a: 1,\n    b: 2,\n  };\n  res.send(result);\n});\n\nconst server = app.listen(8000, function (req, res) {\n  console.log('8000 \u7aef\u53e3\u542f\u52a8\u6210\u529f');\n});",
               lang: 'javascript',
             }),
             o.a.createElement(
@@ -28977,7 +28971,7 @@
               '\u76ee\u5f55\u7ed3\u6784',
             ),
             o.a.createElement(i['a'], {
-              code: '\u251c\u2500\u2500 /dist/                     # \u9879\u76ee\u8f93\u51fa\u76ee\u5f55\n\u251c\u2500\u2500 /lib/                      # \u9879\u76ee\u6e90\u7801\u76ee\u5f55\n\u2502 \u251c\u2500\u2500 /cancel/                 # \u5b9a\u4e49\u53d6\u6d88\u529f\u80fd\n\u2502 \u251c\u2500\u2500 /core/                   # \u4e00\u4e9b\u6838\u5fc3\u529f\u80fd\n\u2502 \u2502 \u251c\u2500\u2500 Axios.js               # axios\u7684\u6838\u5fc3\u4e3b\u7c7b\n\u2502 \u2502 \u251c\u2500\u2500 dispatchRequest.js     # \u7528\u6765\u8c03\u7528http\u8bf7\u6c42\u9002\u914d\u5668\u65b9\u6cd5\u53d1\u9001\u8bf7\u6c42\n\u2502 \u2502 \u251c\u2500\u2500 InterceptorManager.js  # \u62e6\u622a\u5668\u6784\u9020\u51fd\u6570\n\u2502 \u2502 \u2514\u2500\u2500 settle.js              # \u6839\u636ehttp\u54cd\u5e94\u72b6\u6001\uff0c\u6539\u53d8Promise\u7684\u72b6\u6001\n\u2502 \u251c\u2500\u2500 /helpers/                # \u4e00\u4e9b\u8f85\u52a9\u65b9\u6cd5\n\u2502 \u251c\u2500\u2500 /adapters/               # \u5b9a\u4e49\u8bf7\u6c42\u7684\u9002\u914d\u5668 xhr\u3001http\n\u2502 \u2502 \u251c\u2500\u2500 http.js                # \u5b9e\u73b0http\u9002\u914d\u5668\n\u2502 \u2502 \u2514\u2500\u2500 xhr.js                 # \u5b9e\u73b0xhr\u9002\u914d\u5668\n\u2502 \u251c\u2500\u2500 axios.js                 # \u5bf9\u5916\u66b4\u9732\u63a5\u53e3\n\u2502 \u251c\u2500\u2500 defaults.js              # \u9ed8\u8ba4\u914d\u7f6e \n\u2502 \u2514\u2500\u2500 utils.js                 # \u516c\u7528\u5de5\u5177\n\u251c\u2500\u2500 package.json               # \u9879\u76ee\u4fe1\u606f\n\u251c\u2500\u2500 index.d.ts                 # \u914d\u7f6eTypeScript\u7684\u58f0\u660e\u6587\u4ef6\n\u2514\u2500\u2500 index.js                   # \u5165\u53e3\u6587\u4ef6',
+              code: '\u251c\u2500\u2500 /dist/                     # \u9879\u76ee\u8f93\u51fa\u76ee\u5f55\n\u251c\u2500\u2500 /lib/                      # \u9879\u76ee\u6e90\u7801\u76ee\u5f55\n\u2502 \u251c\u2500\u2500 /cancel/                 # \u5b9a\u4e49\u53d6\u6d88\u529f\u80fd\n\u2502 \u251c\u2500\u2500 /core/                   # \u4e00\u4e9b\u6838\u5fc3\u529f\u80fd\n\u2502 \u2502 \u251c\u2500\u2500 Axios.js               # axios\u7684\u6838\u5fc3\u4e3b\u7c7b\n\u2502 \u2502 \u251c\u2500\u2500 dispatchRequest.js     # \u7528\u6765\u8c03\u7528http\u8bf7\u6c42\u9002\u914d\u5668\u65b9\u6cd5\u53d1\u9001\u8bf7\u6c42\n\u2502 \u2502 \u251c\u2500\u2500 InterceptorManager.js  # \u62e6\u622a\u5668\u6784\u9020\u51fd\u6570\n\u2502 \u2502 \u2514\u2500\u2500 settle.js              # \u6839\u636ehttp\u54cd\u5e94\u72b6\u6001\uff0c\u6539\u53d8Promise\u7684\u72b6\u6001\n\u2502 \u251c\u2500\u2500 /helpers/                # \u4e00\u4e9b\u8f85\u52a9\u65b9\u6cd5\n\u2502 \u251c\u2500\u2500 /adapters/               # \u5b9a\u4e49\u8bf7\u6c42\u7684\u9002\u914d\u5668 xhr\u3001http\n\u2502 \u2502 \u251c\u2500\u2500 http.js                # \u5b9e\u73b0http\u9002\u914d\u5668\n\u2502 \u2502 \u2514\u2500\u2500 xhr.js                 # \u5b9e\u73b0xhr\u9002\u914d\u5668\n\u2502 \u251c\u2500\u2500 axios.js                 # \u5bf9\u5916\u66b4\u9732\u63a5\u53e3\n\u2502 \u251c\u2500\u2500 defaults.js              # \u9ed8\u8ba4\u914d\u7f6e\n\u2502 \u2514\u2500\u2500 utils.js                 # \u516c\u7528\u5de5\u5177\n\u251c\u2500\u2500 package.json               # \u9879\u76ee\u4fe1\u606f\n\u251c\u2500\u2500 index.d.ts                 # \u914d\u7f6eTypeScript\u7684\u58f0\u660e\u6587\u4ef6\n\u2514\u2500\u2500 index.js                   # \u5165\u53e3\u6587\u4ef6',
               lang: 'unknown',
             }),
             o.a.createElement(
@@ -29000,7 +28994,7 @@
               o.a.createElement(
                 'p',
                 null,
-                '\u9ed8\u8ba4\u5bfc\u51fa\u7684axios\u672c\u8d28\u65f6\u5185\u90e8',
+                '\u9ed8\u8ba4\u5bfc\u51fa\u7684 axios \u672c\u8d28\u65f6\u5185\u90e8',
                 o.a.createElement('code', null, 'createInstance'),
                 '\u521b\u5efa\u7684',
                 o.a.createElement('code', null, 'Axios'),
@@ -29011,7 +29005,7 @@
               o.a.createElement(
                 'p',
                 null,
-                '\u5373axios\u672c\u8d28\u4e0a\u662f\u4e00\u4e2a\u51fd\u6570',
+                '\u5373 axios \u672c\u8d28\u4e0a\u662f\u4e00\u4e2a\u51fd\u6570',
               ),
               o.a.createElement(
                 'p',
@@ -29028,7 +29022,7 @@
               ),
             ),
             o.a.createElement(i['a'], {
-              code: '/**\n * Create an instance of Axios\n *\n * @param {Object} defaultConfig The default config for the instance\n *\n * @returns {Axios} A new instance of Axios\n */\nfunction createInstance(defaultConfig) {\n  const context = new Axios(defaultConfig);\n  const instance = bind(Axios.prototype.request, context);\n\n  // Copy axios.prototype to instance\n  utils.extend(instance, Axios.prototype, context, {allOwnKeys: true});\n\n  // Copy context to instance\n  utils.extend(instance, context, null, {allOwnKeys: true});\n\n  // Factory for creating new instances\n  instance.create = function create(instanceConfig) {\n    return createInstance(mergeConfig(defaultConfig, instanceConfig));\n  };\n\n  return instance;\n}\n\n\n// Create the default instance to be exported\nconst axios = createInstance(defaults);\n\nexport default axios;',
+              code: '/**\n * Create an instance of Axios\n *\n * @param {Object} defaultConfig The default config for the instance\n *\n * @returns {Axios} A new instance of Axios\n */\nfunction createInstance(defaultConfig) {\n  const context = new Axios(defaultConfig);\n  const instance = bind(Axios.prototype.request, context);\n\n  // Copy axios.prototype to instance\n  utils.extend(instance, Axios.prototype, context, { allOwnKeys: true });\n\n  // Copy context to instance\n  utils.extend(instance, context, null, { allOwnKeys: true });\n\n  // Factory for creating new instances\n  instance.create = function create(instanceConfig) {\n    return createInstance(mergeConfig(defaultConfig, instanceConfig));\n  };\n\n  return instance;\n}\n\n// Create the default instance to be exported\nconst axios = createInstance(defaults);\n\nexport default axios;',
               lang: 'javascript',
             }),
             o.a.createElement(
@@ -29075,17 +29069,17 @@
             ),
             o.a.createElement(
               'h2',
-              { id: '\u4e3b\u7c7baxios\u89e3\u8bfb' },
+              { id: '\u4e3b\u7c7b-axios-\u89e3\u8bfb' },
               o.a.createElement(
                 a['AnchorLink'],
                 {
-                  to: '#\u4e3b\u7c7baxios\u89e3\u8bfb',
+                  to: '#\u4e3b\u7c7b-axios-\u89e3\u8bfb',
                   'aria-hidden': 'true',
                   tabIndex: -1,
                 },
                 o.a.createElement('span', { className: 'icon icon-link' }),
               ),
-              '\u4e3b\u7c7bAxios\u89e3\u8bfb',
+              '\u4e3b\u7c7b Axios \u89e3\u8bfb',
             ),
             o.a.createElement(
               'h3',
@@ -29111,7 +29105,7 @@
               ),
             ),
             o.a.createElement(i['a'], {
-              code: 'class InterceptorManager {\n  constructor() {\n    this.handlers = [];\n  }\n\n  /**\n   * Add a new interceptor to the stack\n   *\n   * @param {Function} fulfilled The function to handle `then` for a `Promise`\n   * @param {Function} rejected The function to handle `reject` for a `Promise`\n   *\n   * @return {Number} An ID used to remove interceptor later\n   */\n  use(fulfilled, rejected, options) {\n    this.handlers.push({\n      fulfilled,\n      rejected,\n      synchronous: options ? options.synchronous : false,\n      runWhen: options ? options.runWhen : null\n    });\n    return this.handlers.length - 1;\n  }\n\n  /**\n   * Remove an interceptor from the stack\n   *\n   * @param {Number} id The ID that was returned by `use`\n   *\n   * @returns {Boolean} `true` if the interceptor was removed, `false` otherwise\n   */\n  eject(id) {\n    if (this.handlers[id]) {\n      this.handlers[id] = null;\n    }\n  }\n\n  /**\n   * Clear all interceptors from the stack\n   *\n   * @returns {void}\n   */\n  clear() {\n    if (this.handlers) {\n      this.handlers = [];\n    }\n  }\n\n  /**\n   * Iterate over all the registered interceptors\n   *\n   * This method is particularly useful for skipping over any\n   * interceptors that may have become `null` calling `eject`.\n   *\n   * @param {Function} fn The function to call for each interceptor\n   *\n   * @returns {void}\n   */\n  forEach(fn) {\n    utils.forEach(this.handlers, function forEachHandler(h) {\n      if (h !== null) {\n        fn(h);\n      }\n    });\n  }\n}',
+              code: 'class InterceptorManager {\n  constructor() {\n    this.handlers = [];\n  }\n\n  /**\n   * Add a new interceptor to the stack\n   *\n   * @param {Function} fulfilled The function to handle `then` for a `Promise`\n   * @param {Function} rejected The function to handle `reject` for a `Promise`\n   *\n   * @return {Number} An ID used to remove interceptor later\n   */\n  use(fulfilled, rejected, options) {\n    this.handlers.push({\n      fulfilled,\n      rejected,\n      synchronous: options ? options.synchronous : false,\n      runWhen: options ? options.runWhen : null,\n    });\n    return this.handlers.length - 1;\n  }\n\n  /**\n   * Remove an interceptor from the stack\n   *\n   * @param {Number} id The ID that was returned by `use`\n   *\n   * @returns {Boolean} `true` if the interceptor was removed, `false` otherwise\n   */\n  eject(id) {\n    if (this.handlers[id]) {\n      this.handlers[id] = null;\n    }\n  }\n\n  /**\n   * Clear all interceptors from the stack\n   *\n   * @returns {void}\n   */\n  clear() {\n    if (this.handlers) {\n      this.handlers = [];\n    }\n  }\n\n  /**\n   * Iterate over all the registered interceptors\n   *\n   * This method is particularly useful for skipping over any\n   * interceptors that may have become `null` calling `eject`.\n   *\n   * @param {Function} fn The function to call for each interceptor\n   *\n   * @returns {void}\n   */\n  forEach(fn) {\n    utils.forEach(this.handlers, function forEachHandler(h) {\n      if (h !== null) {\n        fn(h);\n      }\n    });\n  }\n}',
               lang: 'javascript',
             }),
             o.a.createElement(
@@ -29120,66 +29114,70 @@
               o.a.createElement(
                 'strong',
                 null,
-                '\u6838\u5fc3\u51fd\u6570\u770buse \u548c forEach\u5373\u53ef',
+                '\u6838\u5fc3\u51fd\u6570\u770b use \u548c forEach \u5373\u53ef',
               ),
             ),
             o.a.createElement(
               'h4',
-              { id: 'use\u51fd\u6570' },
-              o.a.createElement(
-                a['AnchorLink'],
-                { to: '#use\u51fd\u6570', 'aria-hidden': 'true', tabIndex: -1 },
-                o.a.createElement('span', { className: 'icon icon-link' }),
-              ),
-              'use\u51fd\u6570',
-            ),
-            o.a.createElement(
-              'p',
-              null,
-              '\u4f7f\u7528\u62e6\u622a\u5668\u65f6\uff0c\u901a\u8fc7use\u65b9\u6cd5\u4f20\u5165\u62e6\u622a\u51fd\u6570.',
-              o.a.createElement('code', null, 'InterceptorManager'),
-              '\u5c06\u62e6\u622a\u51fd\u6570\u5b58\u5165\u81ea\u8eab\u7ef4\u62a4\u7684\u62e6\u622a\u51fd\u6570\u6570\u7ec4handlers\u4e2d\uff0c\u6700\u540e\u8c03\u7528\u65f6\u4f7f\u7528\u3002',
-            ),
-            o.a.createElement(
-              'h4',
-              { id: 'foreach\u51fd\u6570' },
+              { id: 'use-\u51fd\u6570' },
               o.a.createElement(
                 a['AnchorLink'],
                 {
-                  to: '#foreach\u51fd\u6570',
+                  to: '#use-\u51fd\u6570',
                   'aria-hidden': 'true',
                   tabIndex: -1,
                 },
                 o.a.createElement('span', { className: 'icon icon-link' }),
               ),
-              'forEach\u51fd\u6570',
+              'use \u51fd\u6570',
+            ),
+            o.a.createElement(
+              'p',
+              null,
+              '\u4f7f\u7528\u62e6\u622a\u5668\u65f6\uff0c\u901a\u8fc7 use \u65b9\u6cd5\u4f20\u5165\u62e6\u622a\u51fd\u6570.',
+              o.a.createElement('code', null, 'InterceptorManager'),
+              '\u5c06\u62e6\u622a\u51fd\u6570\u5b58\u5165\u81ea\u8eab\u7ef4\u62a4\u7684\u62e6\u622a\u51fd\u6570\u6570\u7ec4 handlers \u4e2d\uff0c\u6700\u540e\u8c03\u7528\u65f6\u4f7f\u7528\u3002',
+            ),
+            o.a.createElement(
+              'h4',
+              { id: 'foreach-\u51fd\u6570' },
+              o.a.createElement(
+                a['AnchorLink'],
+                {
+                  to: '#foreach-\u51fd\u6570',
+                  'aria-hidden': 'true',
+                  tabIndex: -1,
+                },
+                o.a.createElement('span', { className: 'icon icon-link' }),
+              ),
+              'forEach \u51fd\u6570',
             ),
             o.a.createElement(
               'p',
               null,
               o.a.createElement('code', null, 'InterceptorManager'),
-              '\u7c7b\u672c\u8eab\u5b9e\u73b0\u7684forEach\u65b9\u6cd5\uff0c\u5bb9\u6613\u548cArray.prototype.forEach\u641e\u6df7.',
+              '\u7c7b\u672c\u8eab\u5b9e\u73b0\u7684 forEach \u65b9\u6cd5\uff0c\u5bb9\u6613\u548c Array.prototype.forEach \u641e\u6df7.',
             ),
             o.a.createElement(
               'p',
               null,
-              '\u51fd\u6570\u7684\u4f5c\u7528\u548c\u904d\u5386\u65f6\u4e00\u6837\u7684\uff0c\u4e3a\u904d\u5386handlers \u6570\u7ec4\uff0c\u5e76\u5c06\u6570\u7ec4\u5143\u7d20\u4f20\u5165\u5230\u5165\u53c2\u7684\u51fd\u6570\u4e2d',
+              '\u51fd\u6570\u7684\u4f5c\u7528\u548c\u904d\u5386\u65f6\u4e00\u6837\u7684\uff0c\u4e3a\u904d\u5386 handlers \u6570\u7ec4\uff0c\u5e76\u5c06\u6570\u7ec4\u5143\u7d20\u4f20\u5165\u5230\u5165\u53c2\u7684\u51fd\u6570\u4e2d',
             ),
             o.a.createElement(
               'h4',
               {
-                id: '\u4e3b\u7c7baxios\u62e6\u622a\u5668\u4f7f\u7528\u903b\u8f91',
+                id: '\u4e3b\u7c7b-axios-\u62e6\u622a\u5668\u4f7f\u7528\u903b\u8f91',
               },
               o.a.createElement(
                 a['AnchorLink'],
                 {
-                  to: '#\u4e3b\u7c7baxios\u62e6\u622a\u5668\u4f7f\u7528\u903b\u8f91',
+                  to: '#\u4e3b\u7c7b-axios-\u62e6\u622a\u5668\u4f7f\u7528\u903b\u8f91',
                   'aria-hidden': 'true',
                   tabIndex: -1,
                 },
                 o.a.createElement('span', { className: 'icon icon-link' }),
               ),
-              '\u4e3b\u7c7bAxios\u62e6\u622a\u5668\u4f7f\u7528\u903b\u8f91',
+              '\u4e3b\u7c7b Axios \u62e6\u622a\u5668\u4f7f\u7528\u903b\u8f91',
             ),
             o.a.createElement(
               'blockquote',
@@ -29187,11 +29185,11 @@
               o.a.createElement(
                 'p',
                 null,
-                'Axios\u4e3b\u7c7b\u4e0a\u7684\u4ee3\u7801\u505a\u5220\u51cf\uff0c\u53ea\u4fdd\u7559\u62e6\u622a\u5668\u76f8\u5173',
+                'Axios \u4e3b\u7c7b\u4e0a\u7684\u4ee3\u7801\u505a\u5220\u51cf\uff0c\u53ea\u4fdd\u7559\u62e6\u622a\u5668\u76f8\u5173',
               ),
             ),
             o.a.createElement(i['a'], {
-              code: "class Axios {\n  constructor(instanceConfig) {\n    this.defaults = instanceConfig;\n    this.interceptors = {\n      request: new InterceptorManager(),\n      response: new InterceptorManager()\n    };\n  }\n  \n  request(configOrUrl, config) {\n  \tconst requestInterceptorChain = [];\n    let synchronousRequestInterceptors = true;\n    this.interceptors.request.forEach(function \t\t\t\t\t         \t\t\t unshiftRequestInterceptors(interceptor) {\n      if (typeof interceptor.runWhen === 'function' && \t\t\t\t\t\t\t\tinterceptor.runWhen(config) === false) {\n        return;\n      }\n\n      synchronousRequestInterceptors = \t\t\t\t\t\t\t\t\t\t\t\t\t\t\tsynchronousRequestInterceptors && \t\t   \t\t\t\t\t\t \t\t\t\t\t\tinterceptor.synchronous;\n\n      requestInterceptorChain.unshift(interceptor.fulfilled, \t\t\t\tinterceptor.rejected);\n    });\n    \n    \n    len = requestInterceptorChain.length;\n\n    let newConfig = config;\n\n    i = 0;\n\n    while (i < len) {\n      const onFulfilled = requestInterceptorChain[i++];\n      const onRejected = requestInterceptorChain[i++];\n      try {\n        newConfig = onFulfilled(newConfig);\n      } catch (error) {\n        onRejected.call(this, error);\n        break;\n      }\n    }\n    \n    try {\n      promise = dispatchRequest.call(this, newConfig);\n    } catch (error) {\n      return Promise.reject(error);\n    }\n\n    i = 0;\n    len = responseInterceptorChain.length;\n\n    while (i < len) {\n      promise = promise.then(responseInterceptorChain[i++],                         \t\t\tresponseInterceptorChain[i++]);\n    }\n\n    return promise;\n  }\n}",
+              code: "class Axios {\n  constructor(instanceConfig) {\n    this.defaults = instanceConfig;\n    this.interceptors = {\n      request: new InterceptorManager(),\n      response: new InterceptorManager(),\n    };\n  }\n\n  request(configOrUrl, config) {\n    const requestInterceptorChain = [];\n    let synchronousRequestInterceptors = true;\n    this.interceptors.request.forEach(function unshiftRequestInterceptors(\n      interceptor,\n    ) {\n      if (\n        typeof interceptor.runWhen === 'function' &&\n        interceptor.runWhen(config) === false\n      ) {\n        return;\n      }\n\n      synchronousRequestInterceptors =\n        synchronousRequestInterceptors && interceptor.synchronous;\n\n      requestInterceptorChain.unshift(\n        interceptor.fulfilled,\n        interceptor.rejected,\n      );\n    });\n\n    len = requestInterceptorChain.length;\n\n    let newConfig = config;\n\n    i = 0;\n\n    while (i < len) {\n      const onFulfilled = requestInterceptorChain[i++];\n      const onRejected = requestInterceptorChain[i++];\n      try {\n        newConfig = onFulfilled(newConfig);\n      } catch (error) {\n        onRejected.call(this, error);\n        break;\n      }\n    }\n\n    try {\n      promise = dispatchRequest.call(this, newConfig);\n    } catch (error) {\n      return Promise.reject(error);\n    }\n\n    i = 0;\n    len = responseInterceptorChain.length;\n\n    while (i < len) {\n      promise = promise.then(\n        responseInterceptorChain[i++],\n        responseInterceptorChain[i++],\n      );\n    }\n\n    return promise;\n  }\n}",
               lang: 'javascript',
             }),
             o.a.createElement(
@@ -29202,17 +29200,17 @@
             o.a.createElement(
               'p',
               null,
-              '\u8bf7\u6c42\u62e6\u622a\u662f\u901a\u8fc7\u904d\u5386\u62e6\u622a\u51fd\u6570\u7d20\u7ec4\u5c06\u51fd\u6570unshift\u63d2\u5165\u6570\u7ec4\uff0c\u56e0\u6b64\u5148\u5b9a\u4e49\u7684\u5c06\u4f1a\u540e\u6267\u884c\u3002\u800c\u54cd\u5e94\u62e6\u622a\u662f\u901a\u8fc7push\u65b9\u6cd5\uff0c\u6240\u4ee5\u65f6\u5148\u5b9a\u4e49\u7684\u4f1a\u5148\u6267\u884c',
+              '\u8bf7\u6c42\u62e6\u622a\u662f\u901a\u8fc7\u904d\u5386\u62e6\u622a\u51fd\u6570\u7d20\u7ec4\u5c06\u51fd\u6570 unshift \u63d2\u5165\u6570\u7ec4\uff0c\u56e0\u6b64\u5148\u5b9a\u4e49\u7684\u5c06\u4f1a\u540e\u6267\u884c\u3002\u800c\u54cd\u5e94\u62e6\u622a\u662f\u901a\u8fc7 push \u65b9\u6cd5\uff0c\u6240\u4ee5\u65f6\u5148\u5b9a\u4e49\u7684\u4f1a\u5148\u6267\u884c',
             ),
             o.a.createElement(
               'p',
               null,
-              '\u83b7\u53d6\u5230\u5bf9\u5e94\u7684\u62e6\u622a\u6570\u7ec4\u540e\uff0c\u4f1a\u904d\u5386\u5c06\u914d\u7f6e\u4f20\u5165\u5230fullfilled\u72b6\u6001\u7684\u51fd\u6570\u4e2d\u3002',
+              '\u83b7\u53d6\u5230\u5bf9\u5e94\u7684\u62e6\u622a\u6570\u7ec4\u540e\uff0c\u4f1a\u904d\u5386\u5c06\u914d\u7f6e\u4f20\u5165\u5230 fullfilled \u72b6\u6001\u7684\u51fd\u6570\u4e2d\u3002',
             ),
             o.a.createElement(
               'p',
               null,
-              '\u901a\u8fc7fullfilled\u6267\u884c\u4fee\u6539\u540e\u8fd4\u56de\u7684\u6700\u65b0\u7684config\u4f20\u9012\u7ed9\u771f\u6b63\u6267\u884c\u7f51\u7edc\u8bf7\u6c42\u7684',
+              '\u901a\u8fc7 fullfilled \u6267\u884c\u4fee\u6539\u540e\u8fd4\u56de\u7684\u6700\u65b0\u7684 config \u4f20\u9012\u7ed9\u771f\u6b63\u6267\u884c\u7f51\u7edc\u8bf7\u6c42\u7684',
               o.a.createElement('code', null, 'dispatchRequest'),
               '\u4e2d',
             ),
@@ -29220,18 +29218,18 @@
               'p',
               null,
               o.a.createElement('code', null, 'dispatchRequest'),
-              '\u6267\u884c\u771f\u6b63\u7684\u7f51\u7edc\u8bf7\u6c42\u5e76\u8fd4\u56de promise \u5bf9\u8c61\u3002\u5728 promise \u5bf9\u8c61\u4e2d\uff0c\u5c06fulfilled\u72b6\u6001\u83b7\u53d6\u5230\u7684\u6570\u636e\u4f20\u5165\u54cd\u5e94\u62e6\u622a\u4e2d',
+              '\u6267\u884c\u771f\u6b63\u7684\u7f51\u7edc\u8bf7\u6c42\u5e76\u8fd4\u56de promise \u5bf9\u8c61\u3002\u5728 promise \u5bf9\u8c61\u4e2d\uff0c\u5c06 fulfilled \u72b6\u6001\u83b7\u53d6\u5230\u7684\u6570\u636e\u4f20\u5165\u54cd\u5e94\u62e6\u622a\u4e2d',
             ),
             o.a.createElement(
               'p',
               null,
               o.a.createElement('code', null, 'dispatchRequest'),
-              '\u4e2d\u6709httpAdapter\u548cxhrAdapter\uff0c\u5bf9 node \u73af\u5883\u548c\u6d4f\u89c8\u5668\u73af\u5883\u505a\u4e86\u9002\u914d\uff0c\u800c\u6211\u4eec\u5e38\u5173\u6ce8\u7684xhrAdapter\u5219\u662f\u57fa\u4e8eXMLHttpRequest\u5b9e\u73b0\u7684 \u6e90\u7801\u5c31\u4e0d\u5c55\u793a',
+              '\u4e2d\u6709 httpAdapter \u548c xhrAdapter\uff0c\u5bf9 node \u73af\u5883\u548c\u6d4f\u89c8\u5668\u73af\u5883\u505a\u4e86\u9002\u914d\uff0c\u800c\u6211\u4eec\u5e38\u5173\u6ce8\u7684 xhrAdapter \u5219\u662f\u57fa\u4e8e XMLHttpRequest \u5b9e\u73b0\u7684 \u6e90\u7801\u5c31\u4e0d\u5c55\u793a',
             ),
             o.a.createElement(
               'p',
               null,
-              '\u5185\u5bb9\u4e3a\u4e00\u4e9b\u72b6\u6001\u5904\u7406\u3001XMLHttpRequest\u5c01\u88c5\u548c\u4e00\u4e9b\u5f02\u5e38\u5904\u7406',
+              '\u5185\u5bb9\u4e3a\u4e00\u4e9b\u72b6\u6001\u5904\u7406\u3001XMLHttpRequest \u5c01\u88c5\u548c\u4e00\u4e9b\u5f02\u5e38\u5904\u7406',
             ),
           ),
         );
@@ -29377,7 +29375,7 @@
               o.a.createElement(
                 'p',
                 null,
-                '\u4e8b\u4ef6\u5faa\u73af\u673a\u5236\u662f\u6307\u6d4f\u89c8\u5668\u5728\u5904\u7406JavaScript\u4ee3\u7801\u65f6\uff0c\u4f7f\u7528\u7684\u4e00\u79cd\u5faa\u73af\u673a\u5236\u3002\u5b83\u7684\u4f5c\u7528\u662f\u4e0d\u65ad\u5730\u4ece\u6d88\u606f\u961f\u5217\u4e2d\u53d6\u51fa\u4e8b\u4ef6\uff0c\u5e76\u5c06\u5176\u5206\u914d\u7ed9\u76f8\u5e94\u7684\u5904\u7406\u7a0b\u5e8f\u8fdb\u884c\u5904\u7406\u3002',
+                '\u4e8b\u4ef6\u5faa\u73af\u673a\u5236\u662f\u6307\u6d4f\u89c8\u5668\u5728\u5904\u7406 JavaScript \u4ee3\u7801\u65f6\uff0c\u4f7f\u7528\u7684\u4e00\u79cd\u5faa\u73af\u673a\u5236\u3002\u5b83\u7684\u4f5c\u7528\u662f\u4e0d\u65ad\u5730\u4ece\u6d88\u606f\u961f\u5217\u4e2d\u53d6\u51fa\u4e8b\u4ef6\uff0c\u5e76\u5c06\u5176\u5206\u914d\u7ed9\u76f8\u5e94\u7684\u5904\u7406\u7a0b\u5e8f\u8fdb\u884c\u5904\u7406\u3002',
               ),
             ),
             o.a.createElement(
@@ -29434,7 +29432,7 @@
             o.a.createElement(
               'p',
               null,
-              '\u6d88\u606f\u961f\u5217\u662f\u7ebf\u7a0b\u95f4\u5b58\u50a8\u4efb\u52a1\u7684\u6570\u636e\u7ed3\u6784\uff0c\u56e0\u4e3a\u4ed6\u662f',
+              '\u6d88\u606f\u961f\u5217\u662f\u5b58\u50a8\u4efb\u52a1\u7684\u6570\u636e\u7ed3\u6784\uff0c\u56e0\u4e3a\u4ed6\u662f',
               o.a.createElement('code', null, '\u5148\u8fdb\u5148\u51fa'),
               '\u7684\u7ed3\u6784\u6240\u4ee5\u53eb\u6d88\u606f\u961f\u5217',
             ),
@@ -29463,7 +29461,7 @@
             o.a.createElement(
               'p',
               null,
-              '\u800cJS\u662f\u5355\u7ebf\u7a0b\u7684\uff0c\u5982\u679c\u4efb\u52a1\u91cf\u6bd4\u8f83\u5927\u6216\u8005\u6ca1\u6709\u4f18\u5148\u7ea7\u6267\u884c\u7684\u60c5\u51b5\uff0c\u5f88\u591a\u4efb\u52a1\u5c31\u4e0d\u4f1a\u88ab\u9ad8\u6548\u548c\u53ca\u65f6\u6267\u884c',
+              '\u800c JS \u662f\u5355\u7ebf\u7a0b\u7684\uff0c\u5982\u679c\u4efb\u52a1\u91cf\u6bd4\u8f83\u5927\u6216\u8005\u6ca1\u6709\u4f18\u5148\u7ea7\u6267\u884c\u7684\u60c5\u51b5\uff0c\u5f88\u591a\u4efb\u52a1\u5c31\u4e0d\u4f1a\u88ab\u9ad8\u6548\u548c\u53ca\u65f6\u6267\u884c',
             ),
             o.a.createElement(
               'p',
@@ -29558,7 +29556,7 @@
                 '\u4ec0\u4e48\u662f\u5b8f\u4efb\u52a1\uff1f',
               ),
               o.a.createElement('br', null),
-              '\u50cfDOM \u4e8b\u4ef6\u3001\u89e3\u6790\u6587\u4ef6\u3001\u8ba1\u7b97\u5e03\u5c40\u3001\u7528\u6237\u4ea4\u4e92\u4e8b\u4ef6\u3001\u8fdb\u7a0b\u95f4\u6d88\u606f\u901a\u77e5\u7684\u4e8b\u4ef6\u8fd9\u4e9b\u5f71\u54cd\u548c\u4f5c\u7528\u8fd4\u56de\u8f83\u5e7f\u7684\u88ab\u5f53\u505a\u5b8f\u4efb\u52a1',
+              '\u50cf DOM \u4e8b\u4ef6\u3001\u89e3\u6790\u6587\u4ef6\u3001\u8ba1\u7b97\u5e03\u5c40\u3001\u7528\u6237\u4ea4\u4e92\u4e8b\u4ef6\u3001\u8fdb\u7a0b\u95f4\u6d88\u606f\u901a\u77e5\u7684\u4e8b\u4ef6\u8fd9\u4e9b\u5f71\u54cd\u548c\u4f5c\u7528\u8fd4\u56de\u8f83\u5e7f\u7684\u88ab\u5f53\u505a\u5b8f\u4efb\u52a1',
             ),
             o.a.createElement(
               'p',
@@ -29582,7 +29580,7 @@
               o.a.createElement('br', null),
               '\u6bcf\u4e2a\u5b8f\u4efb\u52a1\u90fd\u4f1a\u7ef4\u62a4\u4e00\u4e2a\u5fae\u4efb\u52a1\u961f\u5217\uff0c\u5728\u6267\u884c\u5b8f\u4efb\u52a1\u671f\u95f4\u9047\u5230\u5fae\u4efb\u52a1\u4f1a\u5c06\u5fae\u4efb\u52a1\u653e\u5728\u5fae\u4efb\u52a1\u961f\u5217\u961f\u5c3e\u3002\u6267\u884c\u5b8c\u5f53\u524d\u5b8f\u4efb\u52a1\u540e\uff0c\u518d\u6267\u884c\u4ece\u5fae\u4efb\u52a1\u961f\u5217\u4e2d\u62ff\u51fa\u6765\u6267\u884c\uff0c\u5728\u5fae\u4efb\u52a1\u961f\u5217\u4e2d\u8fd8\u6709\u5fae\u4efb\u52a1\u7684\u8bdd\u4e5f\u4f1a\u5c06\u65b0\u7684\u5fae\u4efb\u52a1\u653e\u5728\u961f\u5c3e\u3002',
               o.a.createElement('br', null),
-              '\u8fd9\u6837\u7684\u8bdd\u5c31\u53ef\u4ee5\u4fdd\u8bc1\u7c7b\u4f3c\u4e00\u4e2aDOM\u76d1\u542c\u4e8b\u4ef6\uff0c\u5c06\u53d8\u5316\u901a\u77e5\u89c6\u4f5c\u5fae\u4efb\u52a1\uff0c\u8fd9\u6837\u5c31\u89e3\u51b3\u4e86\u5b9e\u65f6\u6027\u95ee\u9898\u548c\u6267\u884c\u6548\u7387\u95ee\u9898',
+              '\u8fd9\u6837\u7684\u8bdd\u5c31\u53ef\u4ee5\u4fdd\u8bc1\u7c7b\u4f3c\u4e00\u4e2a DOM \u76d1\u542c\u4e8b\u4ef6\uff0c\u5c06\u53d8\u5316\u901a\u77e5\u89c6\u4f5c\u5fae\u4efb\u52a1\uff0c\u8fd9\u6837\u5c31\u89e3\u51b3\u4e86\u5b9e\u65f6\u6027\u95ee\u9898\u548c\u6267\u884c\u6548\u7387\u95ee\u9898',
             ),
             o.a.createElement(
               'ol',
@@ -29596,7 +29594,7 @@
             o.a.createElement(
               'p',
               null,
-              'clearTimeout\u7684\u5b9e\u73b0\u5c31\u662f\u83b7\u53d6\u5230 ID\uff0c\u6267\u884c\u5728\u5ef6\u8fdf\u4efb\u52a1\u961f\u5217\u4e2d\u627e\u5230 ID \u5e76\u5220\u9664\u3002',
+              'clearTimeout \u7684\u5b9e\u73b0\u5c31\u662f\u83b7\u53d6\u5230 ID\uff0c\u6267\u884c\u5728\u5ef6\u8fdf\u4efb\u52a1\u961f\u5217\u4e2d\u627e\u5230 ID \u5e76\u5220\u9664\u3002',
             ),
             o.a.createElement(
               'p',
@@ -29613,27 +29611,27 @@
               o.a.createElement(
                 'li',
                 null,
-                '\u5982\u679c\u6d88\u606f\u961f\u5217\u4e2d\u7684\u4efb\u52a1\u6267\u884c\u8fc7\u4e45\uff0c\u6bd4\u5982 JS \u6267\u884c\u4e00\u6bb5\u5f88\u957f\u7684\u4efb\u52a1\uff0c\u5176\u5b9e\u5b9a\u65f6\u5668\u518d\u6267\u884c\uff0c\u5373\u4f7f\u8bbe\u7f6e\u4e860\u79d2\u7684\u5ef6\u8fdf',
+                '\u5982\u679c\u6d88\u606f\u961f\u5217\u4e2d\u7684\u4efb\u52a1\u6267\u884c\u8fc7\u4e45\uff0c\u6bd4\u5982 JS \u6267\u884c\u4e00\u6bb5\u5f88\u957f\u7684\u4efb\u52a1\uff0c\u5176\u5b9e\u5b9a\u65f6\u5668\u518d\u6267\u884c\uff0c\u5373\u4f7f\u8bbe\u7f6e\u4e86 0 \u79d2\u7684\u5ef6\u8fdf',
               ),
               o.a.createElement(
                 'li',
                 null,
-                '\u672a\u6fc0\u6d3b\u7684\u9875\u9762 background tab\u4e2d\u7684\u5b9a\u65f6\u5668\u6267\u884c\u6700\u5c0f\u95f4\u9694\u4f1a\u88ab\u8bbe\u7f6e\u4e3a1000ms',
+                '\u672a\u6fc0\u6d3b\u7684\u9875\u9762 background tab \u4e2d\u7684\u5b9a\u65f6\u5668\u6267\u884c\u6700\u5c0f\u95f4\u9694\u4f1a\u88ab\u8bbe\u7f6e\u4e3a 1000ms',
               ),
               o.a.createElement(
                 'li',
                 null,
-                '\u5b9a\u65f6\u5668\u5b58\u5728\u5d4c\u5957\u4f7f\u7528\u65f6, \u7cfb\u7edf\u8bbe\u7f6e\u6700\u5c0f\u95f4\u9694\u4e3a4ms',
+                '\u5b9a\u65f6\u5668\u5b58\u5728\u5d4c\u5957\u4f7f\u7528\u65f6, \u7cfb\u7edf\u8bbe\u7f6e\u6700\u5c0f\u95f4\u9694\u4e3a 4ms',
               ),
               o.a.createElement(
                 'li',
                 null,
-                '\u5b9a\u65f6\u5668\u5b58\u5728\u6700\u5927\u65f6\u95f4\u503c2147483647\u6beb\u79d2\uff0c\u5982\u679c\u5927\u4e8e\u8fd9\u4e2a\u503c\u76f8\u5f53\u4e8e\u8bbe\u7f6e\u4e3a0\u6beb\u79d2',
+                '\u5b9a\u65f6\u5668\u5b58\u5728\u6700\u5927\u65f6\u95f4\u503c 2147483647 \u6beb\u79d2\uff0c\u5982\u679c\u5927\u4e8e\u8fd9\u4e2a\u503c\u76f8\u5f53\u4e8e\u8bbe\u7f6e\u4e3a 0 \u6beb\u79d2',
               ),
               o.a.createElement(
                 'li',
                 null,
-                '\u5b9a\u65f6\u5668\u5185\u90e8this \u6307\u5411\u95ee\u9898\uff0c\u5982\u679c\u6267\u884c\u7684\u51fd\u6570\u4e3a\u67d0\u4e2a\u5bf9\u8c61\u4e0b\u7684\u5c5e\u6027\uff0c\u6267\u884c\u4f20\u5165\u5b9a\u65f6\u5668\u7684\u8bdd\uff0cthis \u6307\u5411\u4f1a\u88ab\u5f53\u505a\u5168\u5c40\u4e0a\u4e0b\u6587\uff0c\u800c\u4e0d\u662f\u5bf9\u8c61\u7684\u3002',
+                '\u5b9a\u65f6\u5668\u5185\u90e8 this \u6307\u5411\u95ee\u9898\uff0c\u5982\u679c\u6267\u884c\u7684\u51fd\u6570\u4e3a\u67d0\u4e2a\u5bf9\u8c61\u4e0b\u7684\u5c5e\u6027\uff0c\u6267\u884c\u4f20\u5165\u5b9a\u65f6\u5668\u7684\u8bdd\uff0cthis \u6307\u5411\u4f1a\u88ab\u5f53\u505a\u5168\u5c40\u4e0a\u4e0b\u6587\uff0c\u800c\u4e0d\u662f\u5bf9\u8c61\u7684\u3002',
               ),
             ),
           ),
@@ -30706,7 +30704,7 @@
               o.a.createElement(
                 'li',
                 null,
-                '\u8fdb\u7a0b\u4e4b\u95f4\u7684\u5185\u5bb9\u76f8\u4e92\u9694\u79bb\u3002\uff08IPC\u901a\u4fe1\uff09',
+                '\u8fdb\u7a0b\u4e4b\u95f4\u7684\u5185\u5bb9\u76f8\u4e92\u9694\u79bb\u3002\uff08IPC \u901a\u4fe1\uff09',
                 o.a.createElement(
                   'ul',
                   null,
@@ -31371,7 +31369,7 @@
   },
   q3YX: function (e) {
     e.exports = JSON.parse(
-      '{"menus":{"en-US":{"/components":[{"title":"\u6c89\u6dc0","path":"/components/foo","meta":{},"children":[{"path":"/components/foo","title":"\u6d4f\u89c8\u5668","meta":{}}]}],"*":[{"path":"/","title":"About me","meta":{}},{"title":"\u57fa\u672c\u529f","path":"/\u57fa\u672c\u529f","meta":{},"children":[{"path":"/\u57fa\u672c\u529f/fn","title":"\u529f\u80fd\u6027\u51fd\u6570/\u7c7b","meta":{}}]},{"title":"\u597d\u6587\u6536\u96c6","path":"/\u597d\u6587\u6536\u96c6","meta":{},"children":[{"path":"/\u597d\u6587\u6536\u96c6","title":"\u77e5\u4e4e","meta":{}}]},{"title":"\u6d4f\u89c8\u5668\u76f8\u5173","path":"/\u6d4f\u89c8\u5668\u76f8\u5173","meta":{},"children":[{"path":"/\u6d4f\u89c8\u5668\u76f8\u5173/browser","title":"\u8fdb\u7a0b","meta":{}},{"path":"/\u6d4f\u89c8\u5668\u76f8\u5173/cache","title":"\u6d4f\u89c8\u5668\u7f13\u5b58","meta":{}},{"path":"/\u6d4f\u89c8\u5668\u76f8\u5173/event-loop","title":"\u4e8b\u4ef6\u5faa\u73af\u673a\u5236(Event Loop)","meta":{}},{"path":"/\u6d4f\u89c8\u5668\u76f8\u5173/http","title":"http \u6f14\u8fdb","meta":{}},{"path":"/\u6d4f\u89c8\u5668\u76f8\u5173/https","title":"https","meta":{}},{"path":"/\u6d4f\u89c8\u5668\u76f8\u5173/render","title":"\u6d4f\u89c8\u5668\u6e32\u67d3\u8fc7\u7a0b","meta":{}}]},{"title":"\u6e90\u7801","path":"/\u6e90\u7801","meta":{},"children":[{"path":"/\u6e90\u7801/axios","title":"axios\u6e90\u7801\u6d45\u8bfb","meta":{}}]}]}},"locales":[{"name":"en-US","label":"English"}],"navs":{},"title":"\u4e00\u84d1\u70df\u96e8\u4efb\u5e73\u751f","logo":"./.dumi/theme/icon.png","mode":"doc","repository":{"url":"","branch":"master"},"theme":{}}',
+      '{"menus":{"en-US":{"/components":[{"title":"\u6c89\u6dc0","path":"/components/foo","meta":{},"children":[{"path":"/components/foo","title":"\u6d4f\u89c8\u5668","meta":{}}]}],"*":[{"path":"/","title":"About me","meta":{}},{"title":"\u57fa\u672c\u529f","path":"/\u57fa\u672c\u529f","meta":{},"children":[{"path":"/\u57fa\u672c\u529f/fn","title":"\u529f\u80fd\u6027\u51fd\u6570/\u7c7b","meta":{}}]},{"title":"\u597d\u6587\u6536\u96c6","path":"/\u597d\u6587\u6536\u96c6","meta":{},"children":[{"path":"/\u597d\u6587\u6536\u96c6","title":"\u77e5\u4e4e","meta":{}}]},{"title":"\u6d4f\u89c8\u5668\u76f8\u5173","path":"/\u6d4f\u89c8\u5668\u76f8\u5173","meta":{},"children":[{"path":"/\u6d4f\u89c8\u5668\u76f8\u5173/browser","title":"\u8fdb\u7a0b","meta":{}},{"path":"/\u6d4f\u89c8\u5668\u76f8\u5173/cache","title":"\u6d4f\u89c8\u5668\u7f13\u5b58","meta":{}},{"path":"/\u6d4f\u89c8\u5668\u76f8\u5173/event-loop","title":"\u4e8b\u4ef6\u5faa\u73af\u673a\u5236(Event Loop)","meta":{}},{"path":"/\u6d4f\u89c8\u5668\u76f8\u5173/http","title":"http \u6f14\u8fdb","meta":{}},{"path":"/\u6d4f\u89c8\u5668\u76f8\u5173/https","title":"https","meta":{}},{"path":"/\u6d4f\u89c8\u5668\u76f8\u5173/render","title":"\u6d4f\u89c8\u5668\u6e32\u67d3\u8fc7\u7a0b","meta":{}}]},{"title":"\u6e90\u7801","path":"/\u6e90\u7801","meta":{},"children":[{"path":"/\u6e90\u7801/axios","title":"axios \u6e90\u7801\u6d45\u8bfb","meta":{}}]}]}},"locales":[{"name":"en-US","label":"English"}],"navs":{},"title":"\u4e00\u84d1\u70df\u96e8\u4efb\u5e73\u751f","logo":"./.dumi/theme/icon.png","mode":"doc","repository":{"url":"","branch":"master"},"theme":{}}',
     );
   },
   qA1w: function (e, t, n) {
@@ -33116,7 +33114,7 @@
               exact: !0,
               meta: {
                 filePath: 'src/Foo/index.md',
-                updatedTime: 1678412955e3,
+                updatedTime: 1685326902e3,
                 componentName: 'Foo',
                 nav: { title: '\u6c89\u6dc0', path: '/components' },
                 slugs: [
@@ -33139,7 +33137,7 @@
               exact: !0,
               meta: {
                 filePath: 'docs/index.md',
-                updatedTime: 1678412955e3,
+                updatedTime: 1685326902e3,
                 icon: 'https://img.ixintu.com/download/jpg/202104/f746ee6db85fdebde41e261b164199f6_400_400.jpg!ys',
                 hero: {
                   title: '\u4e00\u84d1\u70df\u96e8\u4efb\u5e73\u751f',
@@ -33178,7 +33176,7 @@
               exact: !0,
               meta: {
                 filePath: 'docs/\u57fa\u672c\u529f/fn.md',
-                updatedTime: 1684894656609,
+                updatedTime: 1685326902e3,
                 title: '\u529f\u80fd\u6027\u51fd\u6570/\u7c7b',
                 path: '/fn',
                 slugs: [
@@ -33217,7 +33215,7 @@
               exact: !0,
               meta: {
                 filePath: 'docs/\u597d\u6587\u6536\u96c6/index.md',
-                updatedTime: 1684822253028,
+                updatedTime: 1685326902e3,
                 slugs: [
                   { depth: 2, value: '\u77e5\u4e4e', heading: '\u77e5\u4e4e' },
                 ],
@@ -33236,7 +33234,7 @@
               exact: !0,
               meta: {
                 filePath: 'docs/\u6d4f\u89c8\u5668\u76f8\u5173/browser.md',
-                updatedTime: 1684396943114,
+                updatedTime: 1685326902e3,
                 title: '\u8fdb\u7a0b',
                 path: '/browser',
                 slugs: [
@@ -33282,7 +33280,7 @@
               exact: !0,
               meta: {
                 filePath: 'docs/\u6d4f\u89c8\u5668\u76f8\u5173/cache.md',
-                updatedTime: 1684485599704,
+                updatedTime: 1685326902e3,
                 slugs: [
                   {
                     depth: 2,
@@ -33340,7 +33338,7 @@
               exact: !0,
               meta: {
                 filePath: 'docs/\u6d4f\u89c8\u5668\u76f8\u5173/eventLoop.md',
-                updatedTime: 1684900442577,
+                updatedTime: 1685326902e3,
                 slugs: [
                   {
                     depth: 2,
@@ -33413,7 +33411,7 @@
               exact: !0,
               meta: {
                 filePath: 'docs/\u6d4f\u89c8\u5668\u76f8\u5173/http.md',
-                updatedTime: 1684646376313,
+                updatedTime: 1685326902e3,
                 slugs: [
                   {
                     depth: 1,
@@ -33424,8 +33422,8 @@
                   { depth: 3, value: '\u80cc\u666f', heading: '\u80cc\u666f' },
                   {
                     depth: 3,
-                    value: 'httt/0.9\u7279\u70b9',
-                    heading: 'httt09\u7279\u70b9',
+                    value: 'httt/0.9 \u7279\u70b9',
+                    heading: 'httt09-\u7279\u70b9',
                   },
                   { depth: 2, value: 'http/1.0', heading: 'http10' },
                   {
@@ -33435,13 +33433,13 @@
                   },
                   {
                     depth: 3,
-                    value: 'http/1\u7279\u70b9',
-                    heading: 'http1\u7279\u70b9',
+                    value: 'http/1 \u7279\u70b9',
+                    heading: 'http1-\u7279\u70b9',
                   },
                   {
                     depth: 3,
-                    value: 'http/1\u7f3a\u70b9',
-                    heading: 'http1\u7f3a\u70b9',
+                    value: 'http/1 \u7f3a\u70b9',
+                    heading: 'http1-\u7f3a\u70b9',
                   },
                   { depth: 2, value: 'http/1.1', heading: 'http11' },
                   {
@@ -33451,13 +33449,13 @@
                   },
                   {
                     depth: 3,
-                    value: 'http/1.1\u7279\u70b9',
-                    heading: 'http11\u7279\u70b9',
+                    value: 'http/1.1 \u7279\u70b9',
+                    heading: 'http11-\u7279\u70b9',
                   },
                   {
                     depth: 3,
-                    value: 'http/1.1\u7f3a\u70b9',
-                    heading: 'http11\u7f3a\u70b9',
+                    value: 'http/1.1 \u7f3a\u70b9',
+                    heading: 'http11-\u7f3a\u70b9',
                   },
                   { depth: 2, value: 'http/2', heading: 'http2' },
                   {
@@ -33467,13 +33465,13 @@
                   },
                   {
                     depth: 3,
-                    value: 'http/2\u7279\u70b9',
-                    heading: 'http2\u7279\u70b9',
+                    value: 'http/2 \u7279\u70b9',
+                    heading: 'http2-\u7279\u70b9',
                   },
                   {
                     depth: 3,
-                    value: 'http/2\u7f3a\u70b9',
-                    heading: 'http2\u7f3a\u70b9',
+                    value: 'http/2 \u7f3a\u70b9',
+                    heading: 'http2-\u7f3a\u70b9',
                   },
                   {
                     depth: 3,
@@ -33490,13 +33488,13 @@
                   },
                   {
                     depth: 3,
-                    value: 'http/3\u7279\u70b9',
-                    heading: 'http3\u7279\u70b9',
+                    value: 'http/3 \u7279\u70b9',
+                    heading: 'http3-\u7279\u70b9',
                   },
                   {
                     depth: 3,
-                    value: 'http/3\u7f3a\u70b9',
-                    heading: 'http3\u7f3a\u70b9',
+                    value: 'http/3 \u7f3a\u70b9',
+                    heading: 'http3-\u7f3a\u70b9',
                   },
                 ],
                 title: 'http \u6f14\u8fdb',
@@ -33514,7 +33512,7 @@
               exact: !0,
               meta: {
                 filePath: 'docs/\u6d4f\u89c8\u5668\u76f8\u5173/https.md',
-                updatedTime: 1684660247622,
+                updatedTime: 1685346523e3,
                 slugs: [
                   { depth: 2, value: 'https', heading: 'https' },
                   {
@@ -33584,7 +33582,7 @@
               exact: !0,
               meta: {
                 filePath: 'docs/\u6d4f\u89c8\u5668\u76f8\u5173/render.md',
-                updatedTime: 1684999413647,
+                updatedTime: 1685346523e3,
                 slugs: [
                   {
                     depth: 2,
@@ -33607,12 +33605,12 @@
               exact: !0,
               meta: {
                 filePath: 'docs/\u6e90\u7801/axios.md',
-                updatedTime: 1685326703354,
+                updatedTime: 1685326902e3,
                 slugs: [
                   {
                     depth: 1,
-                    value: 'axios\u6e90\u7801\u6d45\u8bfb',
-                    heading: 'axios\u6e90\u7801\u6d45\u8bfb',
+                    value: 'axios \u6e90\u7801\u6d45\u8bfb',
+                    heading: 'axios-\u6e90\u7801\u6d45\u8bfb',
                   },
                   { depth: 2, value: '\u8c03\u8bd5', heading: '\u8c03\u8bd5' },
                   {
@@ -33637,8 +33635,8 @@
                   },
                   {
                     depth: 2,
-                    value: '\u4e3b\u7c7bAxios\u89e3\u8bfb',
-                    heading: '\u4e3b\u7c7baxios\u89e3\u8bfb',
+                    value: '\u4e3b\u7c7b Axios \u89e3\u8bfb',
+                    heading: '\u4e3b\u7c7b-axios-\u89e3\u8bfb',
                   },
                   {
                     depth: 3,
@@ -33647,27 +33645,27 @@
                   },
                   {
                     depth: 4,
-                    value: 'use\u51fd\u6570',
-                    heading: 'use\u51fd\u6570',
+                    value: 'use \u51fd\u6570',
+                    heading: 'use-\u51fd\u6570',
                   },
                   {
                     depth: 4,
-                    value: 'forEach\u51fd\u6570',
-                    heading: 'foreach\u51fd\u6570',
+                    value: 'forEach \u51fd\u6570',
+                    heading: 'foreach-\u51fd\u6570',
                   },
                   {
                     depth: 4,
                     value:
-                      '\u4e3b\u7c7bAxios\u62e6\u622a\u5668\u4f7f\u7528\u903b\u8f91',
+                      '\u4e3b\u7c7b Axios \u62e6\u622a\u5668\u4f7f\u7528\u903b\u8f91',
                     heading:
-                      '\u4e3b\u7c7baxios\u62e6\u622a\u5668\u4f7f\u7528\u903b\u8f91',
+                      '\u4e3b\u7c7b-axios-\u62e6\u622a\u5668\u4f7f\u7528\u903b\u8f91',
                   },
                 ],
-                title: 'axios\u6e90\u7801\u6d45\u8bfb',
+                title: 'axios \u6e90\u7801\u6d45\u8bfb',
                 group: { path: '/\u6e90\u7801', title: '\u6e90\u7801' },
               },
               title:
-                'axios\u6e90\u7801\u6d45\u8bfb - \u4e00\u84d1\u70df\u96e8\u4efb\u5e73\u751f',
+                'axios \u6e90\u7801\u6d45\u8bfb - \u4e00\u84d1\u70df\u96e8\u4efb\u5e73\u751f',
             },
             {
               path: '/components',
@@ -35404,9 +35402,6 @@
   y9mK: function (e, t, n) {
     var r = n('Qlla');
     e.exports = /Version\/10\.\d+(\.\d+)?( Mobile\/\w+)? Safari\//.test(r);
-  },
-  yBxs: function (e, t, n) {
-    e.exports = n.p + 'static/middle.a68210c6.png';
   },
   yIAO: function (e, t, n) {
     var r = n('tny8'),
@@ -43757,6 +43752,9 @@
               'p',
               null,
               '\u6574\u7406\u4e86\u4e00\u4e0b\u601d\u8def\uff0c\u6700\u540e\u753b\u4e86\u4e00\u4e2a\u56fe\uff0c\u4e00\u56fe\u80dc\u5343\u8a00\u3002',
+              o.a.createElement('img', {
+                src: 'https://github.com/huangrenfang/blog/blob/master/static/process.7cc147d4.png',
+              }),
               o.a.createElement('img', {
                 src: n('xn/p'),
                 alt: '\u6d4f\u89c8\u5668\u6e32\u67d3\u8fc7\u7a0b',
