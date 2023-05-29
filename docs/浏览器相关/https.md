@@ -49,7 +49,7 @@
 4. 通过`对称传输密钥X`，两端进行对称加密传输
 
 这种方式是否可靠呢？并不然，中间人依然可以伪造另一份公钥私钥，骗取浏览器端的密钥 X，实现中间人为代理的形式获取数据或者篡改数据
-<img src="https://github.com/huangrenfang/blog/blob/master/static/middle.a68210c6.png"></img>
+<img src="https://raw.githubusercontent.com/huangrenfang/blog/master/static/middle.a68210c6.png"></img>
 
 #### 第四版 数字证书（CA 证书）
 
