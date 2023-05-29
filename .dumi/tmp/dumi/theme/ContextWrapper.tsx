@@ -3,14 +3,11 @@
 // DO NOT CHANGE IT MANUALLY!
 import React, { useState, useEffect, useRef } from 'react';
 import { useOutlet, history } from 'dumi';
-import { SiteContext } from '/Users/zhaoyuxing/Desktop/blog/node_modules/dumi/dist/client/theme-api/context.js';
+import { SiteContext } from '/Users/zhaoyuxing/Desktop/project/blog/node_modules/dumi/dist/client/theme-api/context.js';
 import { demos, components } from '../meta';
 import { locales } from '../locales/config';
 
-const entryExports = {
-  
-  
-};
+const entryExports = {};
 
 export default function DumiContextWrapper() {
   const outlet = useOutlet();
@@ -32,16 +29,23 @@ export default function DumiContextWrapper() {
   }, []);
 
   return (
-    <SiteContext.Provider value={{
-      pkg: {"name":"blog","version":"1.0.0"},
-      entryExports,
-      demos,
-      components,
-      locales,
-      loading,
-      setLoading,
-      themeConfig: {"logo":"https://img.ixintu.com/download/jpg/202104/f746ee6db85fdebde41e261b164199f6_400_400.jpg!ys","title":"blog","footer":false,"prefersColor":{"default":"light","switch":true}},
-    }}>
+    <SiteContext.Provider
+      value={{
+        pkg: { name: 'blog', version: '1.0.0' },
+        entryExports,
+        demos,
+        components,
+        locales,
+        loading,
+        setLoading,
+        themeConfig: {
+          logo: 'https://img.ixintu.com/download/jpg/202104/f746ee6db85fdebde41e261b164199f6_400_400.jpg!ys',
+          title: 'blog',
+          footer: false,
+          prefersColor: { default: 'light', switch: true },
+        },
+      }}
+    >
       {outlet}
     </SiteContext.Provider>
   );

@@ -3,12 +3,14 @@
 // DO NOT CHANGE IT MANUALLY!
 import React, { useEffect, useState } from 'react';
 import { ApplyPluginsType } from 'umi';
-import { renderClient, RenderClientOpts } from '/Users/zhaoyuxing/Desktop/blog/node_modules/@umijs/renderer-react';
+import {
+  renderClient,
+  RenderClientOpts,
+} from '/Users/zhaoyuxing/Desktop/project/blog/node_modules/@umijs/renderer-react';
 import { createHistory } from './core/history';
 import { createPluginManager } from './core/plugin';
 import { getRoutes } from './core/route';
 import type { Location } from 'history';
-
 
 const publicPath = '/';
 const runtimePublicPath = false;
@@ -21,7 +23,7 @@ type TestBrowserProps = {
 export function TestBrowser(props: TestBrowserProps) {
   const pluginManager = createPluginManager();
   const [context, setContext] = useState<RenderClientOpts | undefined>(
-    undefined
+    undefined,
   );
   useEffect(() => {
     const genContext = async () => {

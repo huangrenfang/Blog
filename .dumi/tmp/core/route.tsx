@@ -5,32 +5,115 @@ import routeProps from './routeProps.js';
 
 if (process.env.NODE_ENV === 'development') {
   Object.entries(routeProps).forEach(([key, value]) => {
-    const internalProps = ['path', 'id', 'parentId', 'isLayout', 'isWrapper', 'layout', 'clientLoader'];
+    const internalProps = [
+      'path',
+      'id',
+      'parentId',
+      'isLayout',
+      'isWrapper',
+      'layout',
+      'clientLoader',
+    ];
     Object.keys(value).forEach((prop) => {
       if (internalProps.includes(prop)) {
         throw new Error(
-          `[UmiJS] route '${key}' should not have '${prop}' prop, please remove this property in 'routeProps'.`
-        )
+          `[UmiJS] route '${key}' should not have '${prop}' prop, please remove this property in 'routeProps'.`,
+        );
       }
-    })
-  })
+    });
+  });
 }
 
 import React from 'react';
 
 export async function getRoutes() {
-  const routes = {"404":{"id":"404","path":"*","parentId":"DocLayout"},"dumi-context-layout":{"id":"dumi-context-layout","path":"/","isLayout":true},"DocLayout":{"id":"DocLayout","path":"/","parentId":"dumi-context-layout","isLayout":true},"docs/browser/browser":{"path":"browser/browser","id":"docs/browser/browser","parentId":"DocLayout"},"docs/browser/test":{"path":"browser/test","id":"docs/browser/test","parentId":"DocLayout"},"docs/index":{"path":"","id":"docs/index","parentId":"DocLayout"},"components/Foo/index":{"id":"components/Foo/index","path":"components/foo","parentId":"DocLayout"},"demo-render":{"id":"demo-render","path":"~demos/:id","parentId":"dumi-context-layout","prerender":false}} as const;
+  const routes = {
+    '404': { id: '404', path: '*', parentId: 'DocLayout' },
+    'dumi-context-layout': {
+      id: 'dumi-context-layout',
+      path: '/',
+      isLayout: true,
+    },
+    DocLayout: {
+      id: 'DocLayout',
+      path: '/',
+      parentId: 'dumi-context-layout',
+      isLayout: true,
+    },
+    'docs/browser/browser': {
+      path: 'browser/browser',
+      id: 'docs/browser/browser',
+      parentId: 'DocLayout',
+    },
+    'docs/browser/test': {
+      path: 'browser/test',
+      id: 'docs/browser/test',
+      parentId: 'DocLayout',
+    },
+    'docs/index': { path: '', id: 'docs/index', parentId: 'DocLayout' },
+    'components/Foo/index': {
+      id: 'components/Foo/index',
+      path: 'components/foo',
+      parentId: 'DocLayout',
+    },
+    'demo-render': {
+      id: 'demo-render',
+      path: '~demos/:id',
+      parentId: 'dumi-context-layout',
+      prerender: false,
+    },
+  } as const;
   return {
     routes,
     routeComponents: {
-'404': React.lazy(() => import(/* webpackChunkName: "nm__dumi__dist__client__pages__404" */'/Users/zhaoyuxing/Desktop/blog/node_modules/dumi/dist/client/pages/404.js')),
-'dumi-context-layout': React.lazy(() => import(/* webpackChunkName: "dumi__tmp__dumi__theme__ContextWrapper" */'/Users/zhaoyuxing/Desktop/blog/.dumi/tmp/dumi/theme/ContextWrapper.tsx')),
-'DocLayout': React.lazy(() => import(/* webpackChunkName: "nm__dumi__theme-default__layouts__DocLayout__index" */'/Users/zhaoyuxing/Desktop/blog/node_modules/dumi/theme-default/layouts/DocLayout/index.js')),
-'docs/browser/browser': React.lazy(() => import(/* webpackChunkName: "docs__browser__browser.md" */'/Users/zhaoyuxing/Desktop/blog/docs/browser/browser.md')),
-'docs/browser/test': React.lazy(() => import(/* webpackChunkName: "docs__browser__test.md" */'/Users/zhaoyuxing/Desktop/blog/docs/browser/test.md')),
-'docs/index': React.lazy(() => import(/* webpackChunkName: "docs__index.md" */'/Users/zhaoyuxing/Desktop/blog/docs/index.md')),
-'components/Foo/index': React.lazy(() => import(/* webpackChunkName: "Foo__index.md" */'/Users/zhaoyuxing/Desktop/blog/src/Foo/index.md')),
-'demo-render': React.lazy(() => import(/* webpackChunkName: "nm__dumi__dist__client__pages__Demo__index" */'/Users/zhaoyuxing/Desktop/blog/node_modules/dumi/dist/client/pages/Demo/index.js')),
-},
+      '404': React.lazy(
+        () =>
+          import(
+            /* webpackChunkName: "nm__dumi__dist__client__pages__404" */ '/Users/zhaoyuxing/Desktop/project/blog/node_modules/dumi/dist/client/pages/404.js'
+          ),
+      ),
+      'dumi-context-layout': React.lazy(
+        () =>
+          import(
+            /* webpackChunkName: "dumi__tmp__dumi__theme__ContextWrapper" */ '/Users/zhaoyuxing/Desktop/project/blog/.dumi/tmp/dumi/theme/ContextWrapper.tsx'
+          ),
+      ),
+      DocLayout: React.lazy(
+        () =>
+          import(
+            /* webpackChunkName: "nm__dumi__theme-default__layouts__DocLayout__index" */ '/Users/zhaoyuxing/Desktop/project/blog/node_modules/dumi/theme-default/layouts/DocLayout/index.js'
+          ),
+      ),
+      'docs/browser/browser': React.lazy(
+        () =>
+          import(
+            /* webpackChunkName: "docs__browser__browser.md" */ '/Users/zhaoyuxing/Desktop/project/blog/docs/browser/browser.md'
+          ),
+      ),
+      'docs/browser/test': React.lazy(
+        () =>
+          import(
+            /* webpackChunkName: "docs__browser__test.md" */ '/Users/zhaoyuxing/Desktop/project/blog/docs/browser/test.md'
+          ),
+      ),
+      'docs/index': React.lazy(
+        () =>
+          import(
+            /* webpackChunkName: "docs__index.md" */ '/Users/zhaoyuxing/Desktop/project/blog/docs/index.md'
+          ),
+      ),
+      'components/Foo/index': React.lazy(
+        () =>
+          import(
+            /* webpackChunkName: "Foo__index.md" */ '/Users/zhaoyuxing/Desktop/project/blog/src/Foo/index.md'
+          ),
+      ),
+      'demo-render': React.lazy(
+        () =>
+          import(
+            /* webpackChunkName: "nm__dumi__dist__client__pages__Demo__index" */ '/Users/zhaoyuxing/Desktop/project/blog/node_modules/dumi/dist/client/pages/Demo/index.js'
+          ),
+      ),
+    },
   };
 }
