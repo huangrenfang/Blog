@@ -3373,7 +3373,7 @@
               null,
               '\u8fd9\u79cd\u65b9\u5f0f\u662f\u5426\u53ef\u9760\u5462\uff1f\u5e76\u4e0d\u7136\uff0c\u4e2d\u95f4\u4eba\u4f9d\u7136\u53ef\u4ee5\u4f2a\u9020\u53e6\u4e00\u4efd\u516c\u94a5\u79c1\u94a5\uff0c\u9a97\u53d6\u6d4f\u89c8\u5668\u7aef\u7684\u5bc6\u94a5 X\uff0c\u5b9e\u73b0\u4e2d\u95f4\u4eba\u4e3a\u4ee3\u7406\u7684\u5f62\u5f0f\u83b7\u53d6\u6570\u636e\u6216\u8005\u7be1\u6539\u6570\u636e',
               o.a.createElement('img', {
-                src: 'https://github.com/huangrenfang/blog/blob/master/static/middle.a68210c6.png',
+                src: 'https://raw.githubusercontent.com/huangrenfang/blog/master/static/middle.a68210c6.png',
               }),
             ),
             o.a.createElement(
@@ -33512,7 +33512,7 @@
               exact: !0,
               meta: {
                 filePath: 'docs/\u6d4f\u89c8\u5668\u76f8\u5173/https.md',
-                updatedTime: 1685346523e3,
+                updatedTime: 1685359098e3,
                 slugs: [
                   { depth: 2, value: 'https', heading: 'https' },
                   {
@@ -33582,7 +33582,7 @@
               exact: !0,
               meta: {
                 filePath: 'docs/\u6d4f\u89c8\u5668\u76f8\u5173/render.md',
-                updatedTime: 1685346523e3,
+                updatedTime: 1685359098e3,
                 slugs: [
                   {
                     depth: 2,
@@ -35273,9 +35273,6 @@
     (e.exports = n),
       (e.exports.__esModule = !0),
       (e.exports['default'] = e.exports);
-  },
-  'xn/p': function (e, t, n) {
-    e.exports = n.p + 'static/process.7cc147d4.png';
   },
   xtlo: function (e, t, n) {
     'use strict';
@@ -43753,11 +43750,7 @@
               null,
               '\u6574\u7406\u4e86\u4e00\u4e0b\u601d\u8def\uff0c\u6700\u540e\u753b\u4e86\u4e00\u4e2a\u56fe\uff0c\u4e00\u56fe\u80dc\u5343\u8a00\u3002',
               o.a.createElement('img', {
-                src: 'https://github.com/huangrenfang/blog/blob/master/static/process.7cc147d4.png',
-              }),
-              o.a.createElement('img', {
-                src: n('xn/p'),
-                alt: '\u6d4f\u89c8\u5668\u6e32\u67d3\u8fc7\u7a0b',
+                src: 'https://raw.githubusercontent.com/huangrenfang/blog/master/static/process.7cc147d4.png',
               }),
             ),
           ),
