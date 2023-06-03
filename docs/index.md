@@ -1,5 +1,6 @@
 ---
 # title: 大仙
+nav: { title: 'About Me', link: '/me' }
 icon: https://img.ixintu.com/download/jpg/202104/f746ee6db85fdebde41e261b164199f6_400_400.jpg!ys
 hero:
   title: 一蓑烟雨任平生
