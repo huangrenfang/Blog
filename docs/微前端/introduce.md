@@ -112,4 +112,5 @@ https://github.com/umijs/qiankun/issues/627
 
 #### garfish
 
+garfish 是字节的开源框架
 仅从使用角度和一些机制实现的角度上看，你可以当做是 qiankun 的翻版, 基本上大差不差...
